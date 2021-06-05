@@ -15,6 +15,8 @@
 		693E01802669188C0091740E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E017E2669188C0091740E /* LoginViewController.swift */; };
 		693E018326691DA70091740E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693E018226691DA70091740E /* LoginView.xib */; };
 		693E018526691EF10091740E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E018426691EF10091740E /* LoginView.swift */; };
+		9AC459E8266BB0BF00BF23AA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459E7266BB0BF00BF23AA /* CustomTextField.swift */; };
+		9AC459EA266BFF3000BF23AA /* LoginMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459E9266BFF3000BF23AA /* LoginMediator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		693E017E2669188C0091740E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		693E018226691DA70091740E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		693E018426691EF10091740E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9AC459E7266BB0BF00BF23AA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		9AC459E9266BFF3000BF23AA /* LoginMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMediator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		693E0178266917DD0091740E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9AC459E6266BB0AF00BF23AA /* IBDesignable */,
 				693E017B266918190091740E /* LoginView */,
 				693E016F266917A50091740E /* LaunchScreen.storyboard */,
 				693E016A266917A30091740E /* Main.storyboard */,
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				693E017E2669188C0091740E /* LoginViewController.swift */,
+				9AC459E9266BFF3000BF23AA /* LoginMediator.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +109,14 @@
 				693E018426691EF10091740E /* LoginView.swift */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		9AC459E6266BB0AF00BF23AA /* IBDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				9AC459E7266BB0BF00BF23AA /* CustomTextField.swift */,
+			);
+			path = IBDesignable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC459EA266BFF3000BF23AA /* LoginMediator.swift in Sources */,
 				693E01802669188C0091740E /* LoginViewController.swift in Sources */,
 				693E0165266917A30091740E /* AppDelegate.swift in Sources */,
 				693E018526691EF10091740E /* LoginView.swift in Sources */,
+				9AC459E8266BB0BF00BF23AA /* CustomTextField.swift in Sources */,
 				693E0167266917A30091740E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

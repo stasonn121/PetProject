@@ -8,21 +8,22 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    var mediator: LoginMediator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        mediator = LoginMediator(viewController: self)
+        hideKeyboardWhenTappedAround()
     }
 
+    func hideKeyboardWhenTappedAround() {
+         let tapGesture = UITapGestureRecognizer(target: self,
+                          action: #selector(hideKeyboard))
+         view.addGestureRecognizer(tapGesture)
+     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     @objc func hideKeyboard() {
+         view.endEditing(true)
+     }
 }
