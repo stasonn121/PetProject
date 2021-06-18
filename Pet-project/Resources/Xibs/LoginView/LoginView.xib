@@ -23,18 +23,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-Cf-z9x">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-Cf-z9x">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmM-Pk-w1o">
-                    <rect key="frame" x="25" y="251.5" width="364" height="31.5"/>
+                    <rect key="frame" x="25" y="271.5" width="364" height="31.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                    <color key="textColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" red="0.40392160420000001" green="0.2235293984" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ef3-PT-l2g" customClass="CustomTextField" customModule="Pet_project" customModuleProvider="target">
-                    <rect key="frame" x="25" y="313" width="364" height="40"/>
+                    <rect key="frame" x="25" y="333" width="364" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="ijq-5v-F3G"/>
@@ -58,7 +59,7 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your pasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIb-YQ-pN7" customClass="CustomTextField" customModule="Pet_project" customModuleProvider="target">
-                    <rect key="frame" x="25" y="373" width="364" height="40"/>
+                    <rect key="frame" x="25" y="393" width="364" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="KcM-u7-2bK"/>
@@ -84,8 +85,8 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GB-Cj-POf">
-                    <rect key="frame" x="25" y="453" width="364" height="40"/>
-                    <color key="backgroundColor" red="0.7839691006031233" green="0.19892930834274489" blue="0.17012404939265102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <rect key="frame" x="25" y="473" width="364" height="40"/>
+                    <color key="backgroundColor" red="0.40392160420000001" green="0.2235293984" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Huo-Q3-WhC"/>
                     </constraints>
@@ -102,15 +103,15 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Forgot Username / Password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5C-Nn-kMy">
-                    <rect key="frame" x="25" y="533" width="364" height="21"/>
+                    <rect key="frame" x="25" y="553" width="364" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" red="0.43137252329999998" green="0.2117646933" blue="0.22745099660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your Account →" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh5-Fg-MAN">
                     <rect key="frame" x="25" y="801.5" width="364" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" red="0.40392160420000001" green="0.2235293984" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -125,7 +126,7 @@
                 <constraint firstAttribute="bottom" secondItem="NBE-Cf-z9x" secondAttribute="bottom" id="Jov-Fe-jgY"/>
                 <constraint firstItem="NBE-Cf-z9x" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LD8-8g-Gmx"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kh5-Fg-MAN" secondAttribute="bottom" constant="40" id="NRi-WQ-7IZ"/>
-                <constraint firstItem="ef3-PT-l2g" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-120" id="QK8-pJ-L6Y"/>
+                <constraint firstItem="ef3-PT-l2g" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-100" id="QK8-pJ-L6Y"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9GB-Cj-POf" secondAttribute="trailing" constant="25" id="VF3-oO-NTk"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="A5C-Nn-kMy" secondAttribute="trailing" constant="25" id="VYg-Ls-soj"/>
                 <constraint firstItem="9GB-Cj-POf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="XU9-s0-4GA"/>
@@ -153,11 +154,8 @@
     </designables>
     <resources>
         <image name="lock" catalog="system" width="128" height="128"/>
-        <image name="login_background" width="391" height="600"/>
+        <image name="login_background" width="540" height="1170"/>
         <image name="mail" catalog="system" width="128" height="93"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

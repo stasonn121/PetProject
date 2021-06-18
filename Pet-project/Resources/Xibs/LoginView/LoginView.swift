@@ -7,13 +7,21 @@
 
 import UIKit
 
+protocol LoginViewDelegate: AnyObject {
+    func onClickCreateAccountLabel(label: UILabel)
+    func onClickForgotLabel(label: UILabel)
+    func onClickLoginButton(label: UIButton)
+}
+
 class LoginView: UIView {
     
-    @IBOutlet var contentView: UIView!
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var forgotLabel: UILabel!
     @IBOutlet weak var createAccountLabel: UILabel!
+    
+    weak var delegate: LoginViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,25 +42,34 @@ class LoginView: UIView {
     }
     
     private func setupTapGesture() {
-        let tapForgotLabel = UITapGestureRecognizer(target: self, action: #selector(onClickForgotLabel))
+        let tapForgotLabel = UITapGestureRecognizer(target: self,
+                                                    action: #selector(onClickForgotLabel))
         forgotLabel.isUserInteractionEnabled = true
         forgotLabel.addGestureRecognizer(tapForgotLabel)
         
-        let tapCreateAccountLabel = UITapGestureRecognizer(target: self, action: #selector(onClickCreateAccountLabel))
+        let tapCreateAccountLabel = UITapGestureRecognizer(target: self,
+                                                           action: #selector(onClickCreateAccountLabel))
         createAccountLabel.isUserInteractionEnabled = true
         createAccountLabel.addGestureRecognizer(tapCreateAccountLabel)
+        
+        let tapGesture = UITapGestureRecognizer(target: self,
+                                                action: #selector(hideKeyboard))
+        contentView.addGestureRecognizer(tapGesture)
     }
     
-    @IBAction func onClickLoginButton(_ sender: Any) {
-        print("Login")
+    @IBAction func onClickLoginButton(_ sender: UIButton) {
+        delegate?.onClickLoginButton(label: sender)
     }
     
     @objc func onClickForgotLabel() {
-        print("Forgot")
+        delegate?.onClickForgotLabel(label: forgotLabel)
     }
     
     @objc func onClickCreateAccountLabel() {
-        print("Account")
+        delegate?.onClickCreateAccountLabel(label: createAccountLabel)
     }
-
+    
+    @objc func hideKeyboard() {
+        contentView.endEditing(true)
+    }
 }
