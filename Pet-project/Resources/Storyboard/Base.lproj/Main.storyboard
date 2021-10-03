@@ -19,6 +19,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="loginView" destination="8bC-Xf-vdC" id="uFw-zc-HDd"/>
                         <segue destination="EWz-5O-UHt" kind="presentation" identifier="register" id="531-bt-ZPV"/>
                     </connections>
                 </viewController>
@@ -26,17 +27,57 @@
             </objects>
             <point key="canvasLocation" x="-113" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Posts View Controller-->
         <scene sceneID="Ngb-hH-pTz">
             <objects>
-                <viewController storyboardIdentifier="VC2" id="Kbb-oP-jT2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC2" id="Kbb-oP-jT2" customClass="PostsViewController" customModule="Pet_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HSB-ka-hGo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5fE-Rs-6cq">
+                                <rect key="frame" x="0.0" y="188" width="414" height="674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="oTe-Lp-CIz">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTe-Lp-CIz" id="T9o-Ae-FkT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kbb-oP-jT2" id="cSS-8l-ibv"/>
+                                    <outlet property="delegate" destination="Kbb-oP-jT2" id="e4d-1P-mVz"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="96j-VI-lmB">
+                                <rect key="frame" x="147" y="44" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="abL-Gn-fOe"/>
+                                    <constraint firstAttribute="height" constant="120" id="j9l-Iw-cCE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VV4-Nd-cVR"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VV4-Nd-cVR" firstAttribute="bottom" secondItem="5fE-Rs-6cq" secondAttribute="bottom" id="UUB-vH-F4O"/>
+                            <constraint firstItem="5fE-Rs-6cq" firstAttribute="leading" secondItem="VV4-Nd-cVR" secondAttribute="leading" id="Yf0-T7-UPY"/>
+                            <constraint firstItem="5fE-Rs-6cq" firstAttribute="top" secondItem="96j-VI-lmB" secondAttribute="bottom" constant="24" id="eTd-je-eHt"/>
+                            <constraint firstItem="VV4-Nd-cVR" firstAttribute="trailing" secondItem="5fE-Rs-6cq" secondAttribute="trailing" id="h6R-67-TKt"/>
+                            <constraint firstItem="96j-VI-lmB" firstAttribute="top" secondItem="VV4-Nd-cVR" secondAttribute="top" id="nqO-tN-1To"/>
+                            <constraint firstItem="96j-VI-lmB" firstAttribute="centerX" secondItem="VV4-Nd-cVR" secondAttribute="centerX" id="rq0-cp-nxW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O5u-yk-P5S"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="96j-VI-lmB" id="MqM-Ee-wSF"/>
+                        <outlet property="postsTableView" destination="5fE-Rs-6cq" id="qzt-Vw-S8H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9j-v6-mRX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,9 +103,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

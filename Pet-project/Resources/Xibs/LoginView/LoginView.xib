@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="Pet_project" customModuleProvider="target">
             <connections>
-                <outlet property="contentView" destination="iN0-l3-epB" id="3Sd-sn-2pG"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="0FC-a6-PXk"/>
                 <outlet property="createAccountLabel" destination="kh5-Fg-MAN" id="4ab-fe-POS"/>
                 <outlet property="emailTextField" destination="ef3-PT-l2g" id="n0Y-Kh-rpN"/>
                 <outlet property="forgotLabel" destination="A5C-Nn-kMy" id="YaT-dA-flP"/>
@@ -20,32 +18,27 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-Cf-z9x">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmM-Pk-w1o">
-                    <rect key="frame" x="25" y="271.5" width="364" height="31.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmM-Pk-w1o">
+                    <rect key="frame" x="25" y="312" width="378" height="31.666666666666686"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31.5" id="SnO-6s-4uX"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                     <color key="textColor" red="0.40392160420000001" green="0.2235293984" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ef3-PT-l2g" customClass="CustomTextField" customModule="Pet_project" customModuleProvider="target">
-                    <rect key="frame" x="25" y="333" width="364" height="40"/>
+                    <rect key="frame" x="25" y="359.66666666666669" width="378" height="44"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="ijq-5v-F3G"/>
+                        <constraint firstAttribute="height" constant="44" id="UYM-kk-tb0"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="20"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="padding">
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
@@ -56,39 +49,36 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="paddingAfterImage">
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isNeedCornerRadius" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your pasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIb-YQ-pN7" customClass="CustomTextField" customModule="Pet_project" customModuleProvider="target">
-                    <rect key="frame" x="25" y="393" width="364" height="40"/>
+                    <rect key="frame" x="25" y="419.66666666666669" width="378" height="44"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="KcM-u7-2bK"/>
+                        <constraint firstAttribute="height" constant="44" id="KcM-u7-2bK"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="20"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="padding">
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                            <imageReference key="value" image="lock" catalog="system" symbolScale="medium"/>
-                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock" catalog="system"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="paddingAfterImage">
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isNeedCornerRadius" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GB-Cj-POf">
-                    <rect key="frame" x="25" y="473" width="364" height="40"/>
+                    <rect key="frame" x="25" y="487.66666666666669" width="378" height="44.000000000000057"/>
                     <color key="backgroundColor" red="0.40392160420000001" green="0.2235293984" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="Huo-Q3-WhC"/>
+                        <constraint firstAttribute="height" constant="44" id="Huo-Q3-WhC"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,61 +93,70 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Forgot Username / Password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5C-Nn-kMy">
-                    <rect key="frame" x="25" y="553" width="364" height="21"/>
+                    <rect key="frame" x="25" y="555.66666666666663" width="378" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="P1I-ey-VqL"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.43137252329999998" green="0.2117646933" blue="0.22745099660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your Account →" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh5-Fg-MAN">
-                    <rect key="frame" x="25" y="801.5" width="364" height="20.5"/>
+                    <rect key="frame" x="25" y="831" width="378" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="WBo-Ux-CK4"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.40392160420000001" green="0.2235293984" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="VjR-Ru-LMK">
+                    <rect key="frame" x="100" y="68" width="228" height="228"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="VjR-Ru-LMK" secondAttribute="height" multiplier="1:1" id="WYS-rD-Q1L"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.93333339689999995" green="0.87843137979999997" blue="0.63921570780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="fIb-YQ-pN7" firstAttribute="top" secondItem="ef3-PT-l2g" secondAttribute="bottom" constant="20" id="6jv-9Q-6vA"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NBE-Cf-z9x" secondAttribute="trailing" id="8Lh-ZK-UQl"/>
+                <constraint firstItem="fIb-YQ-pN7" firstAttribute="top" secondItem="ef3-PT-l2g" secondAttribute="bottom" constant="16" id="6jv-9Q-6vA"/>
                 <constraint firstItem="fIb-YQ-pN7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="B6K-cz-Ta6"/>
                 <constraint firstItem="WmM-Pk-w1o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="FQ3-M6-JrN"/>
                 <constraint firstItem="A5C-Nn-kMy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="Jmg-Tk-7cO"/>
-                <constraint firstAttribute="bottom" secondItem="NBE-Cf-z9x" secondAttribute="bottom" id="Jov-Fe-jgY"/>
-                <constraint firstItem="NBE-Cf-z9x" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LD8-8g-Gmx"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kh5-Fg-MAN" secondAttribute="bottom" constant="40" id="NRi-WQ-7IZ"/>
-                <constraint firstItem="ef3-PT-l2g" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-100" id="QK8-pJ-L6Y"/>
+                <constraint firstAttribute="bottom" secondItem="kh5-Fg-MAN" secondAttribute="bottom" constant="74" id="NRi-WQ-7IZ"/>
+                <constraint firstItem="WmM-Pk-w1o" firstAttribute="top" secondItem="VjR-Ru-LMK" secondAttribute="bottom" constant="16" id="ToY-YP-Ebr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9GB-Cj-POf" secondAttribute="trailing" constant="25" id="VF3-oO-NTk"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="A5C-Nn-kMy" secondAttribute="trailing" constant="25" id="VYg-Ls-soj"/>
                 <constraint firstItem="9GB-Cj-POf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="XU9-s0-4GA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kh5-Fg-MAN" secondAttribute="trailing" constant="25" id="aIe-sl-5rC"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fIb-YQ-pN7" secondAttribute="trailing" constant="25" id="byk-VF-y7p"/>
                 <constraint firstItem="kh5-Fg-MAN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="coJ-B6-trp"/>
-                <constraint firstItem="ef3-PT-l2g" firstAttribute="top" secondItem="WmM-Pk-w1o" secondAttribute="bottom" constant="30" id="gcc-qS-05s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VjR-Ru-LMK" secondAttribute="trailing" constant="100" id="cwX-JQ-hyi"/>
+                <constraint firstItem="ef3-PT-l2g" firstAttribute="top" secondItem="WmM-Pk-w1o" secondAttribute="bottom" constant="16" id="gcc-qS-05s"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WmM-Pk-w1o" secondAttribute="trailing" constant="25" id="hV9-at-CpZ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ef3-PT-l2g" secondAttribute="trailing" constant="25" id="lCW-51-pWT"/>
                 <constraint firstItem="ef3-PT-l2g" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="m9Y-FC-K4F"/>
-                <constraint firstItem="NBE-Cf-z9x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qIw-Mi-rrN"/>
-                <constraint firstItem="9GB-Cj-POf" firstAttribute="top" secondItem="fIb-YQ-pN7" secondAttribute="bottom" constant="40" id="rv2-Ei-ySm"/>
-                <constraint firstItem="A5C-Nn-kMy" firstAttribute="top" secondItem="9GB-Cj-POf" secondAttribute="bottom" constant="40" id="v0z-Hv-g52"/>
+                <constraint firstItem="9GB-Cj-POf" firstAttribute="top" secondItem="fIb-YQ-pN7" secondAttribute="bottom" constant="24" id="rv2-Ei-ySm"/>
+                <constraint firstItem="A5C-Nn-kMy" firstAttribute="top" secondItem="9GB-Cj-POf" secondAttribute="bottom" constant="24" id="v0z-Hv-g52"/>
+                <constraint firstItem="VjR-Ru-LMK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="xtC-Hp-lVj"/>
+                <constraint firstItem="VjR-Ru-LMK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="yiu-AV-At9"/>
+                <constraint firstItem="kh5-Fg-MAN" firstAttribute="top" relation="lessThanOrEqual" secondItem="A5C-Nn-kMy" secondAttribute="bottom" priority="999" constant="275" id="zTi-Eg-QSo"/>
             </constraints>
-            <point key="canvasLocation" x="-62.318840579710148" y="152.67857142857142"/>
+            <point key="canvasLocation" x="-63.084112149532707" y="152.26781857451405"/>
         </view>
     </objects>
     <designables>
         <designable name="ef3-PT-l2g">
-            <size key="intrinsicContentSize" width="67.5" height="28.5"/>
+            <size key="intrinsicContentSize" width="67.333333333333329" height="28.666666666666668"/>
         </designable>
         <designable name="fIb-YQ-pN7">
-            <size key="intrinsicContentSize" width="88" height="28.5"/>
+            <size key="intrinsicContentSize" width="88" height="28.666666666666668"/>
         </designable>
     </designables>
     <resources>
+        <image name="car" width="1125" height="1125"/>
         <image name="lock" catalog="system" width="128" height="128"/>
-        <image name="login_background" width="540" height="1170"/>
         <image name="mail" catalog="system" width="128" height="93"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

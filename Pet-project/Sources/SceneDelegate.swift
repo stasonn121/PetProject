@@ -12,20 +12,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     var navigationController: UINavigationController?
+    var cordinator: CordinatorIml = {
+        let navigationController = UINavigationController()
+        let router = MainRouter(navigationController: navigationController)
+        return CordinatorIml(router: router)
+    }()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "VC1")
-            navigationController = UINavigationController(rootViewController: vc)
-            navigationController?.navigationBar.isHidden = true
-            window.rootViewController = navigationController
-            
-             self.window = window
-             window.makeKeyAndVisible()
-             self.window?.tintColor = .black
+            cordinator.route(to: .loginPage)
+            window.rootViewController = cordinator.getRootScreen()
+            window.tintColor = .black
+            self.window = window
+            window.makeKeyAndVisible()
         }
     }
 

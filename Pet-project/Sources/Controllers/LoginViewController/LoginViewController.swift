@@ -7,15 +7,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
+    
+    @IBOutlet var loginView: LoginView!
     var mediator: LoginMediator?
-    weak var loginView: LoginView?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginView = self.view as? LoginView
         mediator = LoginMediator(viewController: self)
-        //NetworkManager().getData
     }
     
     override func viewWillAppear(_ animated: Bool) {

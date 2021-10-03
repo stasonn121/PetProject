@@ -10,7 +10,7 @@ import UIKit
 protocol LoginViewDelegate: AnyObject {
     func onClickCreateAccountLabel(label: UILabel)
     func onClickForgotLabel(label: UILabel)
-    func onClickLoginButton(label: UIButton)
+    func onClickLoginButton(emailLabel: UITextField, passwordLabel: UITextField)
 }
 
 class LoginView: UIView {
@@ -58,7 +58,7 @@ class LoginView: UIView {
     }
     
     @IBAction func onClickLoginButton(_ sender: UIButton) {
-        delegate?.onClickLoginButton(label: sender)
+        delegate?.onClickLoginButton(emailLabel: emailTextField, passwordLabel: passwordTextField)
     }
     
     @objc func onClickForgotLabel() {

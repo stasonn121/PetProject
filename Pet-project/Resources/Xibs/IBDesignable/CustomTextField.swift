@@ -18,6 +18,16 @@ class CustomTextField: UITextField {
         }
     }
     
+    @IBInspectable var isNeedCornerRadius: Bool = false {
+        didSet {
+            if isNeedCornerRadius {
+                layer.cornerRadius = frame.height / 2
+            } else {
+                layer.cornerRadius = 0
+            }
+        }
+    }
+    
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         let rect = super.textRect(forBounds: bounds)
         let insets = UIEdgeInsets(top: 0, left: paddingAfterImage, bottom: 0, right: paddingAfterImage)
@@ -42,7 +52,6 @@ class CustomTextField: UITextField {
             let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
             imageView.contentMode = .scaleAspectFit
             imageView.image = image
-            // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
             leftView = imageView
         } else {
             leftViewMode = UITextField.ViewMode.never

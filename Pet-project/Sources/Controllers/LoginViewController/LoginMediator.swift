@@ -34,18 +34,27 @@ extension LoginMediator: UITextFieldDelegate {
 
 extension LoginMediator: LoginViewDelegate {
     func onClickCreateAccountLabel(label: UILabel) {
-        //self.performSegue(withIdentifier: "register", sender: nil)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "VC2")
-        viewController?.navigationController?.navigationBar.isHidden = false
-        viewController?.navigationController?.pushViewController(vc, animated: true)
+        self.viewController?.performSegue(withIdentifier: "register", sender: nil)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "VC2")
+//        viewController?.navigationController?.navigationBar.isHidden = false
+//        viewController?.navigationController?.pushViewController(vc, animated: true)
     }
     
     func onClickForgotLabel(label: UILabel) {
         print("Forgot")
     }
     
-    func onClickLoginButton(label: UIButton) {
-        print("Login")
+    func onClickLoginButton(emailLabel: UITextField, passwordLabel: UITextField) {
+        let authService = (UIApplication.shared.delegate as! AppDelegate).authService
+        let authModel = AuthModel(email: emailLabel.text!, password: passwordLabel.text!)
+        authService.loginUser(authModel: authModel) { result in
+            switch result {
+            case .success(_): do {
+                self.viewController?.viewModel?.cordinator.route(to: .postPage)
+            }
+            case .failure(_): break
+            }
+        }
     }
 }

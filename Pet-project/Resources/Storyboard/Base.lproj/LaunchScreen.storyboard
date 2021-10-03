@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,20 +12,22 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="l4w-Yg-qMk">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="l4w-Yg-qMk">
+                                <rect key="frame" x="112" y="67.999999999999986" width="204" height="203.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l4w-Yg-qMk" secondAttribute="height" multiplier="1:1" id="9iQ-bH-9xC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94509804249999996" green="0.88627451660000001" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="l4w-Yg-qMk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="0nM-LF-sEz"/>
-                            <constraint firstAttribute="bottom" secondItem="l4w-Yg-qMk" secondAttribute="bottom" id="bEJ-Sh-YCd"/>
-                            <constraint firstAttribute="trailing" secondItem="l4w-Yg-qMk" secondAttribute="trailing" id="cJH-Uh-yXA"/>
-                            <constraint firstItem="l4w-Yg-qMk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="iNc-jK-KX5"/>
+                            <constraint firstItem="l4w-Yg-qMk" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.22" id="243-pt-8yn"/>
+                            <constraint firstItem="l4w-Yg-qMk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5I4-tz-wnj"/>
+                            <constraint firstItem="l4w-Yg-qMk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="67.999999999999986" id="yFH-5x-FHa"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,9 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="login_background" width="540" height="1170"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="car" width="1125" height="1125"/>
     </resources>
 </document>
