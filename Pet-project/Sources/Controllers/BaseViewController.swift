@@ -8,5 +8,5 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    internal var viewModel: BaseViewModel?
+    internal var viewModel: BaseViewModelProtocol?
 }

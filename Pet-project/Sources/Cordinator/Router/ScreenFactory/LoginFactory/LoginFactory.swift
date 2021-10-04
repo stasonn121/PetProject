@@ -11,7 +11,13 @@ class LoginFactory {
     static func getLoginPage(cordinator: Cordinator) -> LoginViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "VC1") as! LoginViewController
-        let viewModel = LoginViewModel(cordinator: cordinator)
+        
+        let authService = (UIApplication.shared.delegate as! AppDelegate).authService
+        
+        let applicationDependency = ApplicationDependency(coordinator: cordinator,
+                                                          authService: authService)
+        
+        let viewModel = LoginViewModel(applicationDependency: applicationDependency)
         vc.viewModel = viewModel
         return vc
     }

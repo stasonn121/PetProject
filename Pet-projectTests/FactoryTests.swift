@@ -43,6 +43,24 @@ class ScreenFactoryTests: XCTestCase {
         let vc = factory.getScreen(pageType: .forgetPage, cordinator: cordinator)
         XCTAssert(vc is UIViewController)
     }
+    
+    func test_router_is_exist_login_viewModel() throws {
+        let vc = factory.getScreen(pageType: .loginPage, cordinator: cordinator)
+        let viewModel = (vc as! BaseViewController).viewModel
+        XCTAssert(viewModel is LoginViewModel)
+    }
+    
+    func test_router_is_exist_post_viewModel() throws {
+        let vc = factory.getScreen(pageType: .postPage, cordinator: cordinator)
+        let viewModel = (vc as! BaseViewController).viewModel
+        XCTAssert(viewModel is PostsViewModel)
+    }
+    
+    func test_router_is_exist_forget_viewModel() throws {
+        let vc = factory.getScreen(pageType: .forgetPage, cordinator: cordinator)
+        let viewModel = (vc as! BaseViewController).viewModel
+        XCTAssert(viewModel != nil)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

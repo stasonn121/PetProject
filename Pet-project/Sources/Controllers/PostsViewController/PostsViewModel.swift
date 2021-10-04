@@ -7,6 +7,15 @@
 
 import Foundation
 
-class PostsViewModel: BaseViewModel {
+class PostsViewModel: BaseViewModelProtocol {
+    var applicationDependency: ApplicationDependency
+    
+    init(applicationDependency: ApplicationDependency) {
+        self.applicationDependency = applicationDependency
+    }
+    
+    func route(to page: PageType) {
+        applicationDependency.coordinator.route(to: page)
+    }
     
 }

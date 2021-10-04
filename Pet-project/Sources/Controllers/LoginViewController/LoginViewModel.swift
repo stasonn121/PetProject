@@ -7,10 +7,30 @@
 
 import Foundation
 
-protocol LoginViewModelProtocol {
-    
+protocol LoginViewModelProtocol: BaseViewModelProtocol {
+    func loginUser(authModel: AuthModel)
 }
 
-class LoginViewModel: BaseViewModel, LoginViewModelProtocol {
+class LoginViewModel: LoginViewModelProtocol {
+    var applicationDependency: ApplicationDependency
     
+    init(applicationDependency: ApplicationDependency) {
+        self.applicationDependency = applicationDependency
+    }
+    
+    func route(to page: PageType) {
+        applicationDependency.coordinator.route(to: page)
+    }
+    
+    func loginUser(authModel: AuthModel) {
+        let authService = applicationDependency.authService
+        authService.loginUser(authModel: authModel) { result in
+            switch result {
+            case .success(_): do {
+                self.route(to: .postPage)
+            }
+            case .failure(_): break
+            }
+        }
+    }
 }

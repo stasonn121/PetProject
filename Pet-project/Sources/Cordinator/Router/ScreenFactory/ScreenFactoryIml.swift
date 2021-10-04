@@ -11,7 +11,7 @@ class ScreenFactoryIml: ScreenFactory {
     func getScreen(pageType: PageType, cordinator: Cordinator) -> UIViewController {
         switch pageType {
         case .loginPage: return LoginFactory.getLoginPage(cordinator: cordinator)
-        case .postPage: return PostsFactory.getPostsPage()
+        case .postPage: return PostsFactory.getPostsPage(cordinator: cordinator)
         case .forgetPage: return ForgetFactory.getForgetPage()
         }
     }

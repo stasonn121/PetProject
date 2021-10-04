@@ -16,6 +16,8 @@
 		693E018326691DA70091740E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693E018226691DA70091740E /* LoginView.xib */; };
 		693E018526691EF10091740E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E018426691EF10091740E /* LoginView.swift */; };
 		69BDA44F270AFBC000479E19 /* FactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA44E270AFBC000479E19 /* FactoryTests.swift */; };
+		69BDA451270B2AF200479E19 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA450270B2AF200479E19 /* BaseViewModelProtocol.swift */; };
+		69BDA453270B319200479E19 /* ApplicationDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA452270B319200479E19 /* ApplicationDependency.swift */; };
 		9A2A456C26F63A3300D67F20 /* Cell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A456A26F63A3300D67F20 /* Cell.xcdatamodeld */; };
 		9A2A459626F63D4600D67F20 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459526F63D4600D67F20 /* CoreDataManager.swift */; };
 		9A2A459B26F7421100D67F20 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459926F7421100D67F20 /* PostsViewController.swift */; };
@@ -82,6 +84,8 @@
 		693E018426691EF10091740E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		69BDA445270AF55300479E19 /* Pet-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BDA44E270AFBC000479E19 /* FactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTests.swift; sourceTree = "<group>"; };
+		69BDA450270B2AF200479E19 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
+		69BDA452270B319200479E19 /* ApplicationDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependency.swift; sourceTree = "<group>"; };
 		9A2A456B26F63A3300D67F20 /* Cell.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cell.xcdatamodel; sourceTree = "<group>"; };
 		9A2A459526F63D4600D67F20 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		9A2A459926F7421100D67F20 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 		693E0179266917EA0091740E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				69BDA450270B2AF200479E19 /* BaseViewModelProtocol.swift */,
 				9AB7A15A2709D1130075EE47 /* BaseViewModel.swift */,
 				9AB7A15C2709D1CF0075EE47 /* BaseViewController.swift */,
 				9A2A459726F7414800D67F20 /* LoginViewController */,
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				9A997A2127087E2900FFE637 /* AuthModel.swift */,
+				69BDA452270B319200479E19 /* ApplicationDependency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -492,8 +498,10 @@
 				9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */,
 				693E018526691EF10091740E /* LoginView.swift in Sources */,
 				9AB7A15D2709D1CF0075EE47 /* BaseViewController.swift in Sources */,
+				69BDA451270B2AF200479E19 /* BaseViewModelProtocol.swift in Sources */,
 				9A832C9C2709D6F600028BF1 /* LoginFactory.swift in Sources */,
 				9AB7A1522709B21B0075EE47 /* MainRouter.swift in Sources */,
+				69BDA453270B319200479E19 /* ApplicationDependency.swift in Sources */,
 				9A2A45AE26F754D500D67F20 /* PostsViewModel.swift in Sources */,
 				9AC459E8266BB0BF00BF23AA /* CustomTextField.swift in Sources */,
 				9A832C9E2709D96A00028BF1 /* PostsFactory.swift in Sources */,

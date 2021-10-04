@@ -8,9 +8,13 @@
 import Foundation
 
 class BaseViewModel {
-    internal let cordinator: Cordinator
+    internal let applicationDependency: ApplicationDependency
     
-    init(cordinator: Cordinator) {
-        self.cordinator = cordinator
+    init(applicationDependency: ApplicationDependency) {
+        self.applicationDependency = applicationDependency
+    }
+    
+    func route(to page: PageType) {
+        applicationDependency.coordinator.route(to: page)
     }
 }
