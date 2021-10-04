@@ -15,6 +15,7 @@
 		693E01802669188C0091740E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E017E2669188C0091740E /* LoginViewController.swift */; };
 		693E018326691DA70091740E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693E018226691DA70091740E /* LoginView.xib */; };
 		693E018526691EF10091740E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E018426691EF10091740E /* LoginView.swift */; };
+		69BDA44F270AFBC000479E19 /* FactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA44E270AFBC000479E19 /* FactoryTests.swift */; };
 		9A2A456C26F63A3300D67F20 /* Cell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A456A26F63A3300D67F20 /* Cell.xcdatamodeld */; };
 		9A2A459626F63D4600D67F20 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459526F63D4600D67F20 /* CoreDataManager.swift */; };
 		9A2A459B26F7421100D67F20 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459926F7421100D67F20 /* PostsViewController.swift */; };
@@ -45,6 +46,16 @@
 		9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459F0266C10E500BF23AA /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		69BDA449270AF55300479E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 693E0159266917A30091740E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 693E0160266917A30091740E;
+			remoteInfo = "Pet-project";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9A997A382709AE6500FFE637 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -69,6 +80,8 @@
 		693E017E2669188C0091740E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		693E018226691DA70091740E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		693E018426691EF10091740E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		69BDA445270AF55300479E19 /* Pet-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69BDA44E270AFBC000479E19 /* FactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTests.swift; sourceTree = "<group>"; };
 		9A2A456B26F63A3300D67F20 /* Cell.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cell.xcdatamodel; sourceTree = "<group>"; };
 		9A2A459526F63D4600D67F20 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		9A2A459926F7421100D67F20 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +120,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69BDA442270AF55300479E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -114,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				693E0163266917A30091740E /* Pet-project */,
+				69BDA446270AF55300479E19 /* Pet-projectTests */,
 				693E0162266917A30091740E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				693E0161266917A30091740E /* Pet-project.app */,
+				69BDA445270AF55300479E19 /* Pet-projectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +195,14 @@
 				693E018426691EF10091740E /* LoginView.swift */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		69BDA446270AF55300479E19 /* Pet-projectTests */ = {
+			isa = PBXGroup;
+			children = (
+				69BDA44E270AFBC000479E19 /* FactoryTests.swift */,
+			);
+			path = "Pet-projectTests";
 			sourceTree = "<group>";
 		};
 		9A2A459426F63D3000D67F20 /* DataBase */ = {
@@ -361,17 +391,39 @@
 			productReference = 693E0161266917A30091740E /* Pet-project.app */;
 			productType = "com.apple.product-type.application";
 		};
+		69BDA444270AF55300479E19 /* Pet-projectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69BDA44B270AF55300479E19 /* Build configuration list for PBXNativeTarget "Pet-projectTests" */;
+			buildPhases = (
+				69BDA441270AF55300479E19 /* Sources */,
+				69BDA442270AF55300479E19 /* Frameworks */,
+				69BDA443270AF55300479E19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69BDA44A270AF55300479E19 /* PBXTargetDependency */,
+			);
+			name = "Pet-projectTests";
+			productName = "Pet-projectTests";
+			productReference = 69BDA445270AF55300479E19 /* Pet-projectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		693E0159266917A30091740E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					693E0160266917A30091740E = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					69BDA444270AF55300479E19 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 693E0160266917A30091740E;
 					};
 				};
 			};
@@ -393,6 +445,7 @@
 			projectRoot = "";
 			targets = (
 				693E0160266917A30091740E /* Pet-project */,
+				69BDA444270AF55300479E19 /* Pet-projectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -407,6 +460,13 @@
 				9A997A24270889C900FFE637 /* GoogleService-Info.plist in Resources */,
 				693E018326691DA70091740E /* LoginView.xib in Resources */,
 				693E016C266917A30091740E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69BDA443270AF55300479E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +509,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69BDA441270AF55300479E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69BDA44F270AFBC000479E19 /* FactoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69BDA44A270AF55300479E19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 693E0160266917A30091740E /* Pet-project */;
+			targetProxy = 69BDA449270AF55300479E19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		693E016A266917A30091740E /* Main.storyboard */ = {
@@ -625,6 +701,56 @@
 			};
 			name = Release;
 		};
+		69BDA44C270AF55300479E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKKK6K6GX6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.Pet-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet-project.app/Pet-project";
+			};
+			name = Debug;
+		};
+		69BDA44D270AF55300479E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKKK6K6GX6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.Pet-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet-project.app/Pet-project";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -642,6 +768,15 @@
 			buildConfigurations = (
 				693E0176266917A50091740E /* Debug */,
 				693E0177266917A50091740E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69BDA44B270AF55300479E19 /* Build configuration list for PBXNativeTarget "Pet-projectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69BDA44C270AF55300479E19 /* Debug */,
+				69BDA44D270AF55300479E19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
