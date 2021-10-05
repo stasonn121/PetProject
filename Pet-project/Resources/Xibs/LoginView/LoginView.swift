@@ -38,7 +38,13 @@ class LoginView: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        settingTextFields()
         setupTapGesture()
+    }
+    
+    private func settingTextFields() {
+        emailTextField.customDelegate = self
+        passwordTextField.customDelegate = self
     }
     
     private func setupTapGesture() {
@@ -71,5 +77,18 @@ class LoginView: UIView {
     
     @objc func hideKeyboard() {
         contentView.endEditing(true)
+    }
+}
+
+extension LoginView: CustomTextFieldDelegate {
+    func textField(_ textField: CustomTextField, onClickRight imageView: UIImageView) {
+        guard textField == passwordTextField else { return }
+        if (passwordTextField.isSecureTextEntry) {
+            passwordTextField.rightImage = PasswordImageEnum.eyeImage.getImage()
+            passwordTextField.isSecureTextEntry = false
+        } else {
+            passwordTextField.rightImage = PasswordImageEnum.eyeSlashImage.getImage()
+            passwordTextField.isSecureTextEntry = true
+        }
     }
 }

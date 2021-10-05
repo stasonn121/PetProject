@@ -59,7 +59,7 @@
                         <constraint firstAttribute="height" constant="44" id="KcM-u7-2bK"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="padding">
                             <real key="value" value="10"/>
@@ -72,6 +72,7 @@
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isNeedCornerRadius" value="YES"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="eye.slash" catalog="system"/>
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GB-Cj-POf">
@@ -151,11 +152,12 @@
             <size key="intrinsicContentSize" width="67.333333333333329" height="28.666666666666668"/>
         </designable>
         <designable name="fIb-YQ-pN7">
-            <size key="intrinsicContentSize" width="88" height="28.666666666666668"/>
+            <size key="intrinsicContentSize" width="88" height="27"/>
         </designable>
     </designables>
     <resources>
         <image name="car" width="1125" height="1125"/>
+        <image name="eye.slash" catalog="system" width="128" height="86"/>
         <image name="lock" catalog="system" width="128" height="128"/>
         <image name="mail" catalog="system" width="128" height="93"/>
     </resources>

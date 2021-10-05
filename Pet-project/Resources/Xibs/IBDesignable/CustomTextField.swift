@@ -1,20 +1,27 @@
 import UIKit
 
 @IBDesignable
-class CustomTextField: UITextField {
-
+class CustomTextField: UITextField, UITextFieldDelegate {
+    
+    weak var customDelegate: CustomTextFieldDelegate?
     @IBInspectable var paddingAfterImage: CGFloat = 0.0
-    @IBInspectable var leftPadding: CGFloat = 0
+    @IBInspectable var padding: CGFloat = 0
     
     @IBInspectable var leftImage: UIImage? {
         didSet {
-            updateView()
+            setLeftImage()
+        }
+    }
+    
+    @IBInspectable var rightImage: UIImage? {
+        didSet {
+            setRightImage()
         }
     }
     
     @IBInspectable var color: UIColor = .gray {
         didSet {
-            updateView()
+            setLeftImage()
         }
     }
     
@@ -42,21 +49,62 @@ class CustomTextField: UITextField {
     
     override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         var textRect = super.leftViewRect(forBounds: bounds)
-        textRect.origin.x += leftPadding
+        textRect.origin.x += padding
         return textRect
     }
     
-    func updateView() {
+    override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
+        var textRect = super.rightViewRect(forBounds: bounds)
+        textRect.origin.x -= padding
+        return textRect
+    }
+    
+}
+
+extension CustomTextField {
+    
+    func setLeftImage() {
         if let image = leftImage {
             leftViewMode = UITextField.ViewMode.always
             let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
             imageView.contentMode = .scaleAspectFit
             imageView.image = image
             leftView = imageView
+            setViewTapGesture(view: leftView!)
         } else {
             leftViewMode = UITextField.ViewMode.never
             leftView = nil
         }
     }
-
+    
+    func setRightImage() {
+        if let image = rightImage {
+            rightViewMode = UITextField.ViewMode.always
+            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = image
+            rightView = imageView
+            setViewTapGesture(view: rightView!)
+        } else {
+            rightViewMode = UITextField.ViewMode.never
+            rightView = nil
+        }
+    }
+    
+    private func setViewTapGesture(view: UIView) {
+        let tapImageView = UITapGestureRecognizer(target: self,
+                                                  action: #selector(self.onClickView(_:)))
+        self.isUserInteractionEnabled = true
+        view.isUserInteractionEnabled = true
+        view.addGestureRecognizer(tapImageView)
+    }
+    
+    @IBAction func onClickView(_ sender: UIGestureRecognizer) {
+        switch sender.view {
+        case rightView: customDelegate?.textField(self, onClickRight: rightView as! UIImageView)
+        case leftView: customDelegate?.textField(self, onClickLeft: leftView as! UIImageView)
+        default: break
+        }
+    }
+    
 }

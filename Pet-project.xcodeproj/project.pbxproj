@@ -17,6 +17,8 @@
 		693E018526691EF10091740E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E018426691EF10091740E /* LoginView.swift */; };
 		69BDA44F270AFBC000479E19 /* FactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA44E270AFBC000479E19 /* FactoryTests.swift */; };
 		69BDA453270B319200479E19 /* ApplicationDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA452270B319200479E19 /* ApplicationDependency.swift */; };
+		9A282254270D0DDA0021ABBF /* CustomTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A282253270D0DDA0021ABBF /* CustomTextFieldDelegate.swift */; };
+		9A282256270D0E3F0021ABBF /* PasswordImageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A282255270D0E3F0021ABBF /* PasswordImageEnum.swift */; };
 		9A2A456C26F63A3300D67F20 /* Cell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A456A26F63A3300D67F20 /* Cell.xcdatamodeld */; };
 		9A2A459626F63D4600D67F20 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459526F63D4600D67F20 /* CoreDataManager.swift */; };
 		9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459926F7421100D67F20 /* PostViewController.swift */; };
@@ -83,6 +85,8 @@
 		69BDA445270AF55300479E19 /* Pet-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BDA44E270AFBC000479E19 /* FactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTests.swift; sourceTree = "<group>"; };
 		69BDA452270B319200479E19 /* ApplicationDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependency.swift; sourceTree = "<group>"; };
+		9A282253270D0DDA0021ABBF /* CustomTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldDelegate.swift; sourceTree = "<group>"; };
+		9A282255270D0E3F0021ABBF /* PasswordImageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordImageEnum.swift; sourceTree = "<group>"; };
 		9A2A456B26F63A3300D67F20 /* Cell.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cell.xcdatamodel; sourceTree = "<group>"; };
 		9A2A459526F63D4600D67F20 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		9A2A459926F7421100D67F20 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 			children = (
 				693E018226691DA70091740E /* LoginView.xib */,
 				693E018426691EF10091740E /* LoginView.swift */,
+				9A282255270D0E3F0021ABBF /* PasswordImageEnum.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				9AC459E7266BB0BF00BF23AA /* CustomTextField.swift */,
+				9A282253270D0DDA0021ABBF /* CustomTextFieldDelegate.swift */,
 			);
 			path = IBDesignable;
 			sourceTree = "<group>";
@@ -490,6 +496,7 @@
 				9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */,
 				9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */,
 				693E018526691EF10091740E /* LoginView.swift in Sources */,
+				9A282254270D0DDA0021ABBF /* CustomTextFieldDelegate.swift in Sources */,
 				9AB7A15D2709D1CF0075EE47 /* BaseViewController.swift in Sources */,
 				9A832C9C2709D6F600028BF1 /* LoginFactory.swift in Sources */,
 				9AB7A1522709B21B0075EE47 /* MainRouter.swift in Sources */,
@@ -497,6 +504,7 @@
 				9A2A45AE26F754D500D67F20 /* PostViewModel.swift in Sources */,
 				9AC459E8266BB0BF00BF23AA /* CustomTextField.swift in Sources */,
 				9A832C9E2709D96A00028BF1 /* PostsFactory.swift in Sources */,
+				9A282256270D0E3F0021ABBF /* PasswordImageEnum.swift in Sources */,
 				9A997A2A2709167800FFE637 /* CordinatorImp.swift in Sources */,
 				9A997A1C270879D800FFE637 /* FirebaseAuth.swift in Sources */,
 				693E0167266917A30091740E /* SceneDelegate.swift in Sources */,
