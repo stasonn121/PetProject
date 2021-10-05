@@ -8,6 +8,6 @@
 import UIKit
 
 protocol Router {
-    func route(to screen: PageType, cordinator: Cordinator)
+    func route(to screen: PageType, applicationDependency: ApplicationDependency)
     func getRootScreen() -> UIViewController
 }

@@ -10,6 +10,8 @@ import Foundation
 typealias completionBlock = (_ result: AuthResult) -> Void
 
 protocol AuthService {
+    static var share: AuthService { get }
+    
     func configureService()
     func createUser(authModel: AuthModel, completion: @escaping completionBlock)
     func loginUser(authModel: AuthModel, completion: @escaping completionBlock)

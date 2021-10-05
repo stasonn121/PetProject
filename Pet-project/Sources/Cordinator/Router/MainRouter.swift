@@ -16,8 +16,8 @@ class MainRouter: Router {
         self.factory = ScreenFactoryIml()
     }
     
-    func route(to screen: PageType, cordinator: Cordinator) {
-        let viewController = factory.getScreen(pageType: screen, cordinator: cordinator)
+    func route(to screen: PageType, applicationDependency: ApplicationDependency) {
+        let viewController = factory.getScreen(pageType: screen, applicationDependency: applicationDependency)
         navigationController.pushViewController(viewController, animated: true)
     }
     

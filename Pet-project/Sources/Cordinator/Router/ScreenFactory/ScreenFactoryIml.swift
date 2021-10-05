@@ -8,11 +8,11 @@
 import UIKit
 
 class ScreenFactoryIml: ScreenFactory {
-    func getScreen(pageType: PageType, cordinator: Cordinator) -> UIViewController {
+    func getScreen(pageType: PageType, applicationDependency: ApplicationDependency) -> UIViewController {
         switch pageType {
-        case .loginPage: return LoginFactory.getLoginPage(cordinator: cordinator)
-        case .postPage: return PostsFactory.getPostsPage(cordinator: cordinator)
-        case .forgetPage: return ForgetFactory.getForgetPage()
+        case .loginPage: return LoginFactory.getLoginPage(applicationDependency: applicationDependency)
+        case .postPage: return PostsFactory.getPostsPage(applicationDependency: applicationDependency)
+        case .forgetPage: return ForgetFactory.getForgetPage(applicationDependency: applicationDependency)
         }
     }
     

@@ -8,14 +8,17 @@
 import UIKit
 
 class CordinatorIml: Cordinator {
-    private let router: Router
+    let router: Router
+    var applicationDependency: ApplicationDependency
     
-    init(router: Router) {
+    init(router: Router, applicationDependency: ApplicationDependency) {
         self.router = router
+        self.applicationDependency = applicationDependency
+        self.applicationDependency.coordinator = self
     }
     
     func route(to page: PageType) {
-        router.route(to: page, cordinator: self)
+        router.route(to: page, applicationDependency: applicationDependency)
     }
     
     func getRootScreen() -> UIViewController {

@@ -16,13 +16,12 @@
 		693E018326691DA70091740E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693E018226691DA70091740E /* LoginView.xib */; };
 		693E018526691EF10091740E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E018426691EF10091740E /* LoginView.swift */; };
 		69BDA44F270AFBC000479E19 /* FactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA44E270AFBC000479E19 /* FactoryTests.swift */; };
-		69BDA451270B2AF200479E19 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA450270B2AF200479E19 /* BaseViewModelProtocol.swift */; };
 		69BDA453270B319200479E19 /* ApplicationDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA452270B319200479E19 /* ApplicationDependency.swift */; };
 		9A2A456C26F63A3300D67F20 /* Cell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A456A26F63A3300D67F20 /* Cell.xcdatamodeld */; };
 		9A2A459626F63D4600D67F20 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459526F63D4600D67F20 /* CoreDataManager.swift */; };
-		9A2A459B26F7421100D67F20 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459926F7421100D67F20 /* PostsViewController.swift */; };
-		9A2A45AC26F751BC00D67F20 /* PostsMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A45AB26F751BC00D67F20 /* PostsMediator.swift */; };
-		9A2A45AE26F754D500D67F20 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A45AD26F754D500D67F20 /* PostsViewModel.swift */; };
+		9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459926F7421100D67F20 /* PostViewController.swift */; };
+		9A2A45AC26F751BC00D67F20 /* PostMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A45AB26F751BC00D67F20 /* PostMediator.swift */; };
+		9A2A45AE26F754D500D67F20 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A45AD26F754D500D67F20 /* PostViewModel.swift */; };
 		9A832C9C2709D6F600028BF1 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832C9B2709D6F600028BF1 /* LoginFactory.swift */; };
 		9A832C9E2709D96A00028BF1 /* PostsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832C9D2709D96A00028BF1 /* PostsFactory.swift */; };
 		9A832CA12709D9D200028BF1 /* ForgetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832CA02709D9D200028BF1 /* ForgetFactory.swift */; };
@@ -40,7 +39,6 @@
 		9AB7A1542709B2730075EE47 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7A1532709B2730075EE47 /* Router.swift */; };
 		9AB7A1572709D0220075EE47 /* Cordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7A1562709D0220075EE47 /* Cordinator.swift */; };
 		9AB7A1592709D0B10075EE47 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7A1582709D0B10075EE47 /* LoginViewModel.swift */; };
-		9AB7A15B2709D1130075EE47 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7A15A2709D1130075EE47 /* BaseViewModel.swift */; };
 		9AB7A15D2709D1CF0075EE47 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7A15C2709D1CF0075EE47 /* BaseViewController.swift */; };
 		9AC459E8266BB0BF00BF23AA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459E7266BB0BF00BF23AA /* CustomTextField.swift */; };
 		9AC459EA266BFF3000BF23AA /* LoginMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459E9266BFF3000BF23AA /* LoginMediator.swift */; };
@@ -84,13 +82,12 @@
 		693E018426691EF10091740E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		69BDA445270AF55300479E19 /* Pet-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BDA44E270AFBC000479E19 /* FactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTests.swift; sourceTree = "<group>"; };
-		69BDA450270B2AF200479E19 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
 		69BDA452270B319200479E19 /* ApplicationDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependency.swift; sourceTree = "<group>"; };
 		9A2A456B26F63A3300D67F20 /* Cell.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cell.xcdatamodel; sourceTree = "<group>"; };
 		9A2A459526F63D4600D67F20 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		9A2A459926F7421100D67F20 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
-		9A2A45AB26F751BC00D67F20 /* PostsMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsMediator.swift; sourceTree = "<group>"; };
-		9A2A45AD26F754D500D67F20 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		9A2A459926F7421100D67F20 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9A2A45AB26F751BC00D67F20 /* PostMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMediator.swift; sourceTree = "<group>"; };
+		9A2A45AD26F754D500D67F20 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		9A832C9B2709D6F600028BF1 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
 		9A832C9D2709D96A00028BF1 /* PostsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsFactory.swift; sourceTree = "<group>"; };
 		9A832CA02709D9D200028BF1 /* ForgetFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetFactory.swift; sourceTree = "<group>"; };
@@ -107,7 +104,6 @@
 		9AB7A1532709B2730075EE47 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		9AB7A1562709D0220075EE47 /* Cordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinator.swift; sourceTree = "<group>"; };
 		9AB7A1582709D0B10075EE47 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		9AB7A15A2709D1130075EE47 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		9AB7A15C2709D1CF0075EE47 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9AC459E7266BB0BF00BF23AA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		9AC459E9266BFF3000BF23AA /* LoginMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMediator.swift; sourceTree = "<group>"; };
@@ -176,8 +172,6 @@
 		693E0179266917EA0091740E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				69BDA450270B2AF200479E19 /* BaseViewModelProtocol.swift */,
-				9AB7A15A2709D1130075EE47 /* BaseViewModel.swift */,
 				9AB7A15C2709D1CF0075EE47 /* BaseViewController.swift */,
 				9A2A459726F7414800D67F20 /* LoginViewController */,
 				9A2A459826F7416A00D67F20 /* PostsViewController */,
@@ -233,9 +227,9 @@
 		9A2A459826F7416A00D67F20 /* PostsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9A2A459926F7421100D67F20 /* PostsViewController.swift */,
-				9A2A45AB26F751BC00D67F20 /* PostsMediator.swift */,
-				9A2A45AD26F754D500D67F20 /* PostsViewModel.swift */,
+				9A2A459926F7421100D67F20 /* PostViewController.swift */,
+				9A2A45AB26F751BC00D67F20 /* PostMediator.swift */,
+				9A2A45AD26F754D500D67F20 /* PostViewModel.swift */,
 			);
 			path = PostsViewController;
 			sourceTree = "<group>";
@@ -489,20 +483,18 @@
 				9AC459EA266BFF3000BF23AA /* LoginMediator.swift in Sources */,
 				9A2A456C26F63A3300D67F20 /* Cell.xcdatamodeld in Sources */,
 				9A997A3327091F7100FFE637 /* ScreenFactoryIml.swift in Sources */,
-				9AB7A15B2709D1130075EE47 /* BaseViewModel.swift in Sources */,
 				9A832CA12709D9D200028BF1 /* ForgetFactory.swift in Sources */,
 				693E01802669188C0091740E /* LoginViewController.swift in Sources */,
-				9A2A45AC26F751BC00D67F20 /* PostsMediator.swift in Sources */,
+				9A2A45AC26F751BC00D67F20 /* PostMediator.swift in Sources */,
 				693E0165266917A30091740E /* AppDelegate.swift in Sources */,
-				9A2A459B26F7421100D67F20 /* PostsViewController.swift in Sources */,
+				9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */,
 				9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */,
 				693E018526691EF10091740E /* LoginView.swift in Sources */,
 				9AB7A15D2709D1CF0075EE47 /* BaseViewController.swift in Sources */,
-				69BDA451270B2AF200479E19 /* BaseViewModelProtocol.swift in Sources */,
 				9A832C9C2709D6F600028BF1 /* LoginFactory.swift in Sources */,
 				9AB7A1522709B21B0075EE47 /* MainRouter.swift in Sources */,
 				69BDA453270B319200479E19 /* ApplicationDependency.swift in Sources */,
-				9A2A45AE26F754D500D67F20 /* PostsViewModel.swift in Sources */,
+				9A2A45AE26F754D500D67F20 /* PostViewModel.swift in Sources */,
 				9AC459E8266BB0BF00BF23AA /* CustomTextField.swift in Sources */,
 				9A832C9E2709D96A00028BF1 /* PostsFactory.swift in Sources */,
 				9A997A2A2709167800FFE637 /* CordinatorImp.swift in Sources */,

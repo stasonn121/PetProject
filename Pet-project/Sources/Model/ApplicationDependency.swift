@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 struct ApplicationDependency {
-    let coordinator: Cordinator
+    var coordinator: Cordinator!
     let authService: AuthService
+    
+    init() {
+        authService = FirebaseAuth.share
+    }
 }

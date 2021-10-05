@@ -8,5 +8,5 @@
 import UIKit
 
 protocol ScreenFactory {
-    func getScreen(pageType: PageType, cordinator: Cordinator) -> UIViewController
+    func getScreen(pageType: PageType, applicationDependency: ApplicationDependency) -> UIViewController
 }

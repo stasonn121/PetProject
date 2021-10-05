@@ -8,7 +8,7 @@
 import UIKit
 
 class ForgetFactory {
-    static func getForgetPage() -> UIViewController {
+    static func getForgetPage(applicationDependency: ApplicationDependency) -> UIViewController {
         return UIViewController()
     }
 }

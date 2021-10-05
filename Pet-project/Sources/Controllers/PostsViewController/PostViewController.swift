@@ -7,16 +7,17 @@
 
 import UIKit
 
-class PostsViewController: BaseViewController {
+class PostViewController: BaseViewController {
     
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var postsTableView: UITableView!
     
-    var mediator: PostsMediator?
+    var viewModel: PostViewModelProtocol!
+    var mediator: PostMediator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mediator = PostsMediator(viewController: self)
+        mediator = PostMediator(viewController: self)
     }
 
 }

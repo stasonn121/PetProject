@@ -7,8 +7,11 @@
 
 import Foundation
 
-protocol LoginViewModelProtocol: BaseViewModelProtocol {
+protocol LoginViewModelProtocol {
+    var applicationDependency: ApplicationDependency { get }
+    
     func loginUser(authModel: AuthModel)
+    func route(to page: PageType)
 }
 
 class LoginViewModel: LoginViewModelProtocol {

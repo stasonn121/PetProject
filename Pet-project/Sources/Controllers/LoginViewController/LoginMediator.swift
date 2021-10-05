@@ -47,6 +47,6 @@ extension LoginMediator: LoginViewDelegate {
     
     func onClickLoginButton(emailLabel: UITextField, passwordLabel: UITextField) {
         let authModel = AuthModel(email: emailLabel.text!, password: passwordLabel.text!)
-        viewController?.viewModel
+        viewController?.viewModel.loginUser(authModel: authModel)
     }
 }

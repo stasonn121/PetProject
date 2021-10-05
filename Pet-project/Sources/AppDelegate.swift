@@ -9,10 +9,17 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    let authService: AuthService = FirebaseAuth()
-
+    
+    var applicationDependency: ApplicationDependency!
+    var cordinator: Cordinator!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        authService.configureService()
+        applicationDependency = ApplicationDependency()
+        applicationDependency.authService.configureService()
+        
+        let navigationController = UINavigationController()
+        let router = MainRouter(navigationController: navigationController)
+        cordinator = CordinatorIml(router: router, applicationDependency: applicationDependency)
         return true
     }
 

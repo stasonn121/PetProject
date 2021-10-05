@@ -11,22 +11,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    var navigationController: UINavigationController?
-    var cordinator: CordinatorIml = {
-        let navigationController = UINavigationController()
-        let router = MainRouter(navigationController: navigationController)
-        return CordinatorIml(router: router)
-    }()
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            cordinator.route(to: .loginPage)
-            window.rootViewController = cordinator.getRootScreen()
-            window.tintColor = .black
-            self.window = window
-            window.makeKeyAndVisible()
-        }
+        guard let windowScene = scene as? UIWindowScene,
+              let cordinator = (UIApplication.shared.delegate as! AppDelegate).cordinator else { return }
+        cordinator.route(to: .loginPage)
+        
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = cordinator.getRootScreen()
+        window.tintColor = .black
+        window.makeKeyAndVisible()
+        self.window = window
+    
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

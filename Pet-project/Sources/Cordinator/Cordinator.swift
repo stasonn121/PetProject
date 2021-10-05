@@ -8,6 +8,9 @@
 import UIKit
 
 protocol Cordinator {
+    var router: Router { get }
+    var applicationDependency: ApplicationDependency { get }
+    
     func route(to page: PageType)
     func getRootScreen() -> UIViewController
 }

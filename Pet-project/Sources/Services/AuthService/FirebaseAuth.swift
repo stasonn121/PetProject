@@ -9,6 +9,10 @@ import Firebase
 
 class FirebaseAuth: AuthService {
     
+    static var share: AuthService = FirebaseAuth()
+    
+    private init() {}
+    
     func configureService() {
         FirebaseApp.configure()
     }

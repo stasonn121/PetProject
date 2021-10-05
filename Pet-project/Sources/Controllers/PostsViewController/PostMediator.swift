@@ -7,17 +7,17 @@
 
 import UIKit
 
-class PostsMediator {
+class PostMediator {
     
-    weak var viewController: PostsViewController?
+    weak var viewController: PostViewController?
     
-    init(viewController: PostsViewController) {
+    init(viewController: PostViewController) {
         self.viewController = viewController
     }
     
 }
 
-extension PostsViewController: UITableViewDelegate {
+extension PostViewController: UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -25,7 +25,7 @@ extension PostsViewController: UITableViewDelegate {
     
 }
 
-extension PostsViewController: UITableViewDataSource {
+extension PostViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0

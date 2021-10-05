@@ -14,11 +14,13 @@ class ScreenFactoryTests: XCTestCase {
     var router: Router!
     var cordinator: Cordinator!
     var factory: ScreenFactory!
+    var applicationDependency: ApplicationDependency!
     
     override func setUp() {
         super.setUp()
         router = MainRouter(navigationController: UINavigationController())
-        cordinator = CordinatorIml.init(router: router)
+        applicationDependency = ApplicationDependency()
+        cordinator = CordinatorIml.init(router: router, applicationDependency: applicationDependency)
         factory = ScreenFactoryIml()
     }
     
@@ -30,36 +32,36 @@ class ScreenFactoryTests: XCTestCase {
     }
 
     func test_router_get_login_controller() throws {
-        let vc = factory.getScreen(pageType: .loginPage, cordinator: cordinator)
+        let vc = factory.getScreen(pageType: .loginPage, applicationDependency: applicationDependency)
         XCTAssert(vc is LoginViewController)
     }
     
     func test_router_get_post_controller() throws {
-        let vc = factory.getScreen(pageType: .postPage, cordinator: cordinator)
-        XCTAssert(vc is PostsViewController)
+        let vc = factory.getScreen(pageType: .postPage, applicationDependency: applicationDependency)
+        XCTAssert(vc is PostViewController)
     }
     
     func test_router_get_forget_controller() throws {
-        let vc = factory.getScreen(pageType: .forgetPage, cordinator: cordinator)
+        let vc = factory.getScreen(pageType: .forgetPage, applicationDependency: applicationDependency)
         XCTAssert(vc is UIViewController)
     }
     
     func test_router_is_exist_login_viewModel() throws {
-        let vc = factory.getScreen(pageType: .loginPage, cordinator: cordinator)
-        let viewModel = (vc as! BaseViewController).viewModel
+        let vc = factory.getScreen(pageType: .loginPage, applicationDependency: applicationDependency)
+        let viewModel = (vc as! LoginViewController).viewModel
         XCTAssert(viewModel is LoginViewModel)
     }
     
     func test_router_is_exist_post_viewModel() throws {
-        let vc = factory.getScreen(pageType: .postPage, cordinator: cordinator)
-        let viewModel = (vc as! BaseViewController).viewModel
-        XCTAssert(viewModel is PostsViewModel)
+        let vc = factory.getScreen(pageType: .postPage, applicationDependency: applicationDependency)
+        let viewModel = (vc as! PostViewController).viewModel
+        XCTAssert(viewModel is PostViewModel)
     }
     
     func test_router_is_exist_forget_viewModel() throws {
-        let vc = factory.getScreen(pageType: .forgetPage, cordinator: cordinator)
-        let viewModel = (vc as! BaseViewController).viewModel
-        XCTAssert(viewModel != nil)
+//        let vc = factory.getScreen(pageType: .forgetPage, applicationDependency: applicationDependency)
+//        let viewModel = (vc as! BaseViewController).viewModel
+//        XCTAssert(viewModel != nil)
     }
 
     func testPerformanceExample() throws {
