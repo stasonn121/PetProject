@@ -9,6 +9,12 @@ import Foundation
 import Firebase
 
 enum AuthResult {
-    case success(AuthDataResult)
+    case success(AuthData)
     case failure(Error)
+}
+
+struct AuthData {
+    let user: User
+    let credential: AuthCredential?
+    let addtionalUserInfo: AdditionalUserInfo?
 }

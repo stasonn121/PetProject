@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol NetworkManagerType {
+    static var shared: NetworkManagerType { get }
+}

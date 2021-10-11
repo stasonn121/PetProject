@@ -20,6 +20,7 @@ class LoginView: UIView {
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var forgotLabel: UILabel!
     @IBOutlet weak var createAccountLabel: UILabel!
+    @IBOutlet weak var loginView: UIButton!
     
     weak var delegate: LoginViewDelegate?
     

@@ -13,6 +13,7 @@
                 <outlet property="createAccountLabel" destination="kh5-Fg-MAN" id="4ab-fe-POS"/>
                 <outlet property="emailTextField" destination="ef3-PT-l2g" id="n0Y-Kh-rpN"/>
                 <outlet property="forgotLabel" destination="A5C-Nn-kMy" id="YaT-dA-flP"/>
+                <outlet property="loginView" destination="9GB-Cj-POf" id="BiX-cQ-1EN"/>
                 <outlet property="passwordTextField" destination="fIb-YQ-pN7" id="nY9-Tg-apM"/>
             </connections>
         </placeholder>

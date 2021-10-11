@@ -11,8 +11,10 @@ import UIKit
 struct ApplicationDependency {
     var coordinator: Cordinator!
     let authService: AuthService
+    let networkManager: NetworkManagerType
     
     init() {
         authService = FirebaseAuth.share
+        networkManager = NetworkManager.shared
     }
 }

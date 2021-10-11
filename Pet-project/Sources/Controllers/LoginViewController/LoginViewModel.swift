@@ -9,13 +9,15 @@ import Foundation
 
 protocol LoginViewModelProtocol {
     var applicationDependency: ApplicationDependency { get }
+    var needShowError: ((AlertModel) -> Void)? { get set }
     
-    func loginUser(authModel: AuthModel)
+    func loginUser(authModel: AuthModel, completion: ((AuthData) -> Void)?)
     func route(to page: PageType)
 }
 
 class LoginViewModel: LoginViewModelProtocol {
     var applicationDependency: ApplicationDependency
+    var needShowError: ((AlertModel) -> Void)?
     
     init(applicationDependency: ApplicationDependency) {
         self.applicationDependency = applicationDependency
@@ -25,14 +27,16 @@ class LoginViewModel: LoginViewModelProtocol {
         applicationDependency.coordinator.route(to: page)
     }
     
-    func loginUser(authModel: AuthModel) {
+    func loginUser(authModel: AuthModel, completion: ((AuthData) -> Void)?) {
         let authService = applicationDependency.authService
         authService.loginUser(authModel: authModel) { result in
             switch result {
-            case .success(_): do {
-                self.route(to: .postPage)
+            case .success(let authData): completion?(authData)
+            case .failure(let error): do {
+                let alertModel = AlertModel(title: "Error",
+                                            message: error.localizedDescription)
+                self.needShowError?(alertModel)
             }
-            case .failure(_): break
             }
         }
     }

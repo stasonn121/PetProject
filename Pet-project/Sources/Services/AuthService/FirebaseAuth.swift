@@ -20,7 +20,10 @@ class FirebaseAuth: AuthService {
     func createUser(authModel: AuthModel, completion: @escaping (_ result: AuthResult) -> Void) {
         Auth.auth().createUser(withEmail: authModel.email, password: authModel.password) { authResult, error in
             if let authResult = authResult {
-                completion(AuthResult.success(authResult))
+                let authData = AuthData(user: authResult.user,
+                                        credential: authResult.credential,
+                                        addtionalUserInfo: authResult.additionalUserInfo)
+                completion(AuthResult.success(authData))
             }
             
             if let error = error {
@@ -32,7 +35,10 @@ class FirebaseAuth: AuthService {
     func loginUser(authModel: AuthModel, completion: @escaping (_ result: AuthResult) -> Void) {
         Auth.auth().signIn(withEmail: authModel.email, password: authModel.password) { authResult, error in
             if let authResult = authResult {
-                completion(AuthResult.success(authResult))
+                let authData = AuthData(user: authResult.user,
+                                        credential: authResult.credential,
+                                        addtionalUserInfo: authResult.additionalUserInfo)
+                completion(AuthResult.success(authData))
             }
             
             if let error = error {

@@ -8,7 +8,11 @@
 import Foundation
 import Alamofire
 
-class NetworkManager {
+class NetworkManager: NetworkManagerType {
+    
+    static var shared: NetworkManagerType = NetworkManager()
+    
+    private init() {}
     
     func getData() {
 //        Alamofire.AF.request("https://animechan.vercel.app/api/random")
