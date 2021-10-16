@@ -16,7 +16,7 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mediator = LoginMediator(viewController: self)
-        initClosureViewModel()
+        initViewModelListeners()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,12 +24,21 @@ class LoginViewController: BaseViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
     
-    private func initClosureViewModel() {
+    func toggleSpiner(isShow: Bool) {
+        if isShow {
+            loginView.spinerView.startAnimating()
+        } else {
+            loginView.spinerView.stopAnimating()
+        }
+    }
+    
+    private func initViewModelListeners() {
         viewModel.needShowError = { [weak self] alertModel in
             DispatchQueue.main.async {
+                self?.toggleSpiner(isShow: false)
                 self?.showAlert(alertModel: alertModel)
             }
-        }
+        } 
     }
 
 }

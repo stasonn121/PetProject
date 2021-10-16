@@ -21,6 +21,7 @@ class LoginView: UIView {
     @IBOutlet weak var forgotLabel: UILabel!
     @IBOutlet weak var createAccountLabel: UILabel!
     @IBOutlet weak var loginView: UIButton!
+    @IBOutlet weak var spinerView: UIActivityIndicatorView!
     
     weak var delegate: LoginViewDelegate?
     

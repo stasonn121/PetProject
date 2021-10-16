@@ -33,8 +33,7 @@ class LoginViewModel: LoginViewModelProtocol {
             switch result {
             case .success(let authData): completion?(authData)
             case .failure(let error): do {
-                let alertModel = AlertModel(title: "Error",
-                                            message: error.localizedDescription)
+                let alertModel = AlertModel(title: "Error", message: error.localizedDescription)
                 self.needShowError?(alertModel)
             }
             }

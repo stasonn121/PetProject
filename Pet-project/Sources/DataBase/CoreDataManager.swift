@@ -7,9 +7,9 @@
 
 import CoreData
 
-class CoreDataManager {
+class CoreDataManager: DataManagerType {
     
-    static var instance: CoreDataManager = {
+    static var shared: DataManagerType = {
         return CoreDataManager()
     }()
     

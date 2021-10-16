@@ -12,9 +12,11 @@ struct ApplicationDependency {
     var coordinator: Cordinator!
     let authService: AuthService
     let networkManager: NetworkManagerType
+    let dataManager: DataManagerType
     
     init() {
-        authService = FirebaseAuth.share
+        authService = FirebaseAuth.shared
         networkManager = NetworkManager.shared
+        dataManager = CoreDataManager.shared
     }
 }

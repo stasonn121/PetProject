@@ -25,6 +25,7 @@
 		9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459926F7421100D67F20 /* PostViewController.swift */; };
 		9A2A45AC26F751BC00D67F20 /* PostMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A45AB26F751BC00D67F20 /* PostMediator.swift */; };
 		9A2A45AE26F754D500D67F20 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A45AD26F754D500D67F20 /* PostViewModel.swift */; };
+		9A3692CA271B563700EC1698 /* DataManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3692C9271B563700EC1698 /* DataManagerType.swift */; };
 		9A832C9C2709D6F600028BF1 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832C9B2709D6F600028BF1 /* LoginFactory.swift */; };
 		9A832C9E2709D96A00028BF1 /* PostsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832C9D2709D96A00028BF1 /* PostsFactory.swift */; };
 		9A832CA12709D9D200028BF1 /* ForgetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832CA02709D9D200028BF1 /* ForgetFactory.swift */; };
@@ -94,6 +95,7 @@
 		9A2A459926F7421100D67F20 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		9A2A45AB26F751BC00D67F20 /* PostMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMediator.swift; sourceTree = "<group>"; };
 		9A2A45AD26F754D500D67F20 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		9A3692C9271B563700EC1698 /* DataManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerType.swift; sourceTree = "<group>"; };
 		9A832C9B2709D6F600028BF1 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
 		9A832C9D2709D96A00028BF1 /* PostsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsFactory.swift; sourceTree = "<group>"; };
 		9A832CA02709D9D200028BF1 /* ForgetFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetFactory.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			children = (
 				9A2A456A26F63A3300D67F20 /* Cell.xcdatamodeld */,
 				9A2A459526F63D4600D67F20 /* CoreDataManager.swift */,
+				9A3692C9271B563700EC1698 /* DataManagerType.swift */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				9A997A3127091F6100FFE637 /* ScreenFactory.swift in Sources */,
 				9AB7A1572709D0220075EE47 /* Cordinator.swift in Sources */,
 				9AC459EA266BFF3000BF23AA /* LoginMediator.swift in Sources */,
+				9A3692CA271B563700EC1698 /* DataManagerType.swift in Sources */,
 				9A2A456C26F63A3300D67F20 /* Cell.xcdatamodeld in Sources */,
 				9A997A3327091F7100FFE637 /* ScreenFactoryIml.swift in Sources */,
 				9A832CA12709D9D200028BF1 /* ForgetFactory.swift in Sources */,

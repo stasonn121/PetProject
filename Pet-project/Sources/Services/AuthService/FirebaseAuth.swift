@@ -9,7 +9,7 @@ import Firebase
 
 class FirebaseAuth: AuthService {
     
-    static var share: AuthService = FirebaseAuth()
+    static var shared: AuthService = FirebaseAuth()
     
     private init() {}
     
