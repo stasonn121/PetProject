@@ -9,7 +9,7 @@ import UIKit
 
 class LoginMediator: NSObject {
     
-    weak var viewController: LoginViewController?
+    weak var viewController: LoginViewController!
     
     init(viewController: LoginViewController) {
         super.init()
@@ -18,9 +18,9 @@ class LoginMediator: NSObject {
     }
     
     func setupDelegates() {
-        viewController?.loginView?.emailTextField.delegate = self
-        viewController?.loginView?.passwordTextField.delegate = self
-        viewController?.loginView?.delegate = self
+        viewController.loginView?.emailTextField.delegate = self
+        viewController.loginView?.passwordTextField.delegate = self
+        viewController.loginView?.delegate = self
     }
     
 }
@@ -34,11 +34,7 @@ extension LoginMediator: UITextFieldDelegate {
 
 extension LoginMediator: LoginViewDelegate {
     func onClickCreateAccountLabel(label: UILabel) {
-        self.viewController?.performSegue(withIdentifier: "register", sender: nil)
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "VC2")
-//        viewController?.navigationController?.navigationBar.isHidden = false
-//        viewController?.navigationController?.pushViewController(vc, animated: true)
+        self.viewController.viewModel.presentModaly(page: .registerPage)
     }
     
     func onClickForgotLabel(label: UILabel) {
@@ -47,8 +43,8 @@ extension LoginMediator: LoginViewDelegate {
     
     func onClickLoginButton(emailLabel: UITextField, passwordLabel: UITextField) {
         let authModel = AuthModel(email: emailLabel.text!, password: passwordLabel.text!)
-        self.viewController?.toggleSpiner(isShow: true)
-        viewController?.viewModel.loginUser(authModel: authModel) { [weak self] authResult in
+        self.viewController.toggleSpiner(isShow: true)
+        viewController.viewModel.loginUser(authModel: authModel) { [weak self] authResult in
             DispatchQueue.main.async {
                 self?.viewController?.viewModel.route(to: .postPage)
                 self?.viewController?.toggleSpiner(isShow: false)

@@ -9,6 +9,7 @@ import Foundation
 
 enum PageType {
     case loginPage
+    case registerPage
     case postPage
     case forgetPage
 }

@@ -13,6 +13,7 @@ protocol LoginViewModelProtocol {
     
     func loginUser(authModel: AuthModel, completion: ((AuthData) -> Void)?)
     func route(to page: PageType)
+    func presentModaly(page: PageType)
 }
 
 class LoginViewModel: LoginViewModelProtocol {
@@ -25,6 +26,10 @@ class LoginViewModel: LoginViewModelProtocol {
     
     func route(to page: PageType) {
         applicationDependency.coordinator.route(to: page)
+    }
+    
+    func presentModaly(page: PageType) {
+        applicationDependency.coordinator.presentModaly(page: page)
     }
     
     func loginUser(authModel: AuthModel, completion: ((AuthData) -> Void)?) {

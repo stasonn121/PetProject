@@ -135,47 +135,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "435017FA-9249-4E7E-A936-62D58333EAFC"
+            uuid = "5F7FE62B-41FB-433B-8363-83FE1C28F15F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pet-project/Sources/Controllers/LoginViewController/LoginMediator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "46CF1604-C7D6-4114-8A91-E951BD55EC9F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pet-project/Sources/Controllers/LoginViewController/LoginMediator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "onClickLoginButton(emailLabel:passwordLabel:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "onClickCreateAccountLabel(label:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "031D9BA8-584D-4BE2-AE7F-307B011CB1B6"
+            uuid = "F8DA862E-8758-4E34-94FA-6C62863E13A2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pet-project/Sources/Controllers/LoginViewController/LoginMediator.swift"
+            filePath = "Pet-project/Sources/Controllers/LoginViewController/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "LoginMediator"
-            landmarkType = "21">
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

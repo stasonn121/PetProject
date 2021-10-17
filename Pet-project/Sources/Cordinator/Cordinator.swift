@@ -12,5 +12,6 @@ protocol Cordinator {
     var applicationDependency: ApplicationDependency { get }
     
     func route(to page: PageType)
+    func presentModaly(page: PageType)
     func getRootScreen() -> UIViewController
 }

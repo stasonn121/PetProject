@@ -48,6 +48,10 @@
 		9AC459EA266BFF3000BF23AA /* LoginMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459E9266BFF3000BF23AA /* LoginMediator.swift */; };
 		9AC459EF266C10B600BF23AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9AC459EE266C10B600BF23AA /* Alamofire */; };
 		9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459F0266C10E500BF23AA /* NetworkManager.swift */; };
+		9AFB0047271B77D900F8FA36 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9AFB0046271B77D900F8FA36 /* SnapKit */; };
+		9AFB004A271C367500F8FA36 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0049271C367500F8FA36 /* RegisterViewController.swift */; };
+		9AFB004D271C3E0600F8FA36 /* RegisterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB004C271C3E0600F8FA36 /* RegisterFactory.swift */; };
+		9AFB004F271C3E8900F8FA36 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB004E271C3E8900F8FA36 /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,9 @@
 		9AC459E7266BB0BF00BF23AA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		9AC459E9266BFF3000BF23AA /* LoginMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMediator.swift; sourceTree = "<group>"; };
 		9AC459F0266C10E500BF23AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9AFB0049271C367500F8FA36 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9AFB004C271C3E0600F8FA36 /* RegisterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFactory.swift; sourceTree = "<group>"; };
+		9AFB004E271C3E8900F8FA36 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AFB0047271B77D900F8FA36 /* SnapKit in Frameworks */,
 				9A832CAD2709E95A00028BF1 /* FirebaseAuth in Frameworks */,
 				9AC459EF266C10B600BF23AA /* Alamofire in Frameworks */,
 			);
@@ -182,6 +190,7 @@
 			children = (
 				9AB7A15C2709D1CF0075EE47 /* BaseViewController.swift */,
 				9A2A459726F7414800D67F20 /* LoginViewController */,
+				9AFB0048271C354E00F8FA36 /* RegisterViewController */,
 				9A2A459826F7416A00D67F20 /* PostsViewController */,
 			);
 			path = Controllers;
@@ -299,9 +308,10 @@
 		9A997A2F27091EE800FFE637 /* ScreenFactory */ = {
 			isa = PBXGroup;
 			children = (
+				9A832C982709D67000028BF1 /* LoginFactory */,
+				9AFB004B271C3DD300F8FA36 /* RegisterFactory */,
 				9A832C9A2709D68000028BF1 /* ForgetFactory */,
 				9A832C992709D67800028BF1 /* PostsFactory */,
-				9A832C982709D67000028BF1 /* LoginFactory */,
 				9A997A3027091F6100FFE637 /* ScreenFactory.swift */,
 				9A997A3227091F7100FFE637 /* ScreenFactoryIml.swift */,
 			);
@@ -378,6 +388,23 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
+		9AFB0048271C354E00F8FA36 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9AFB0049271C367500F8FA36 /* RegisterViewController.swift */,
+				9AFB004E271C3E8900F8FA36 /* RegisterViewModel.swift */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		9AFB004B271C3DD300F8FA36 /* RegisterFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9AFB004C271C3E0600F8FA36 /* RegisterFactory.swift */,
+			);
+			path = RegisterFactory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +425,7 @@
 			packageProductDependencies = (
 				9AC459EE266C10B600BF23AA /* Alamofire */,
 				9A832CAC2709E95A00028BF1 /* FirebaseAuth */,
+				9AFB0046271B77D900F8FA36 /* SnapKit */,
 			);
 			productName = "Pet-project";
 			productReference = 693E0161266917A30091740E /* Pet-project.app */;
@@ -451,6 +479,7 @@
 			packageReferences = (
 				9AC459ED266C10B600BF23AA /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9A832CAB2709E95A00028BF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9AFB0045271B77D900F8FA36 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 693E0162266917A30091740E /* Products */;
 			projectDirPath = "";
@@ -496,12 +525,14 @@
 				9A3692CA271B563700EC1698 /* DataManagerType.swift in Sources */,
 				9A2A456C26F63A3300D67F20 /* Cell.xcdatamodeld in Sources */,
 				9A997A3327091F7100FFE637 /* ScreenFactoryIml.swift in Sources */,
+				9AFB004F271C3E8900F8FA36 /* RegisterViewModel.swift in Sources */,
 				9A832CA12709D9D200028BF1 /* ForgetFactory.swift in Sources */,
 				693E01802669188C0091740E /* LoginViewController.swift in Sources */,
 				9A2A45AC26F751BC00D67F20 /* PostMediator.swift in Sources */,
 				693E0165266917A30091740E /* AppDelegate.swift in Sources */,
 				9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */,
 				9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */,
+				9AFB004A271C367500F8FA36 /* RegisterViewController.swift in Sources */,
 				693E018526691EF10091740E /* LoginView.swift in Sources */,
 				9A282254270D0DDA0021ABBF /* CustomTextFieldDelegate.swift in Sources */,
 				9AB7A15D2709D1CF0075EE47 /* BaseViewController.swift in Sources */,
@@ -512,6 +543,7 @@
 				9AC459E8266BB0BF00BF23AA /* CustomTextField.swift in Sources */,
 				9A832C9E2709D96A00028BF1 /* PostsFactory.swift in Sources */,
 				9A282256270D0E3F0021ABBF /* PasswordImageEnum.swift in Sources */,
+				9AFB004D271C3E0600F8FA36 /* RegisterFactory.swift in Sources */,
 				9A997A2A2709167800FFE637 /* CordinatorImp.swift in Sources */,
 				9A997A1C270879D800FFE637 /* FirebaseAuth.swift in Sources */,
 				693E0167266917A30091740E /* SceneDelegate.swift in Sources */,
@@ -687,6 +719,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKKK6K6GX6;
 				INFOPLIST_FILE = "Pet-project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -706,6 +739,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKKK6K6GX6;
 				INFOPLIST_FILE = "Pet-project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -816,6 +850,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		9AFB0045271B77D900F8FA36 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -828,6 +870,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9AC459ED266C10B600BF23AA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		9AFB0046271B77D900F8FA36 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AFB0045271B77D900F8FA36 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 

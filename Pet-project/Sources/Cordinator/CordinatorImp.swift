@@ -21,6 +21,10 @@ class CordinatorIml: Cordinator {
         router.route(to: page, applicationDependency: applicationDependency)
     }
     
+    func presentModaly(page: PageType) {
+        router.presentModaly(screen: page, applicationDependency: applicationDependency)
+    }
+    
     func getRootScreen() -> UIViewController {
         return router.getRootScreen()
     }

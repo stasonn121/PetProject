@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="973" y="101"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="dJ0-RV-ZrJ">
             <objects>
-                <viewController id="EWz-5O-UHt" sceneMemberID="viewController">
+                <viewController id="EWz-5O-UHt" customClass="RegisterViewController" customModule="Pet_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XBo-B0-f5D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

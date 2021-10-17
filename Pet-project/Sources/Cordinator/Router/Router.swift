@@ -9,5 +9,6 @@ import UIKit
 
 protocol Router {
     func route(to screen: PageType, applicationDependency: ApplicationDependency)
+    func presentModaly(screen: PageType, applicationDependency: ApplicationDependency)
     func getRootScreen() -> UIViewController
 }
