@@ -41,6 +41,7 @@ class LoginView: UIView {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         settingTextFields()
+        settingSpinerView()
         setupTapGesture()
     }
     
@@ -63,6 +64,10 @@ class LoginView: UIView {
         let tapGesture = UITapGestureRecognizer(target: self,
                                                 action: #selector(hideKeyboard))
         contentView.addGestureRecognizer(tapGesture)
+    }
+    
+    private func settingSpinerView() {
+        spinerView.alpha = 0.3
     }
     
     @IBAction func onClickLoginButton(_ sender: UIButton) {

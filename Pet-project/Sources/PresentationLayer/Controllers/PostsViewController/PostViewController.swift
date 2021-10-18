@@ -12,7 +12,7 @@ class PostViewController: BaseViewController {
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var postsTableView: UITableView!
     
-    var viewModel: PostViewModelProtocol!
+    var viewModel: PostViewModelType!
     var mediator: PostMediator?
     
     override func viewDidLoad() {

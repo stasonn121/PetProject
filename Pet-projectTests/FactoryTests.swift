@@ -41,6 +41,11 @@ class ScreenFactoryTests: XCTestCase {
         XCTAssert(vc is PostViewController)
     }
     
+    func test_router_get_register_controller() throws {
+        let vc = factory.getScreen(pageType: .registerPage, applicationDependency: applicationDependency)
+        XCTAssert(vc is RegisterViewController)
+    }
+    
     func test_router_get_forget_controller() throws {
         let vc = factory.getScreen(pageType: .forgetPage, applicationDependency: applicationDependency)
         XCTAssert(vc is UIViewController)
@@ -56,6 +61,12 @@ class ScreenFactoryTests: XCTestCase {
         let vc = factory.getScreen(pageType: .postPage, applicationDependency: applicationDependency)
         let viewModel = (vc as! PostViewController).viewModel
         XCTAssert(viewModel is PostViewModel)
+    }
+    
+    func test_router_is_exist_register_viewModel() throws {
+        let vc = factory.getScreen(pageType: .registerPage, applicationDependency: applicationDependency)
+        let viewModel = (vc as! RegisterViewController).viewModel
+        XCTAssert(viewModel is RegisterViewModel)
     }
     
     func test_router_is_exist_forget_viewModel() throws {

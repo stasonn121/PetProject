@@ -7,9 +7,8 @@
 
 import CoreData
 
-class CoreDataManager: DataManagerType {
-    
-    static var shared: DataManagerType = {
+class CoreDataManager: DataBaseType {
+    static var shared: DataBaseType = {
         return CoreDataManager()
     }()
     
@@ -37,6 +36,16 @@ class CoreDataManager: DataManagerType {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    #warning("need to be implemented")
+    func master(operation: DataBaseOperationType<MasterDomein>) {
+        
+    }
+    
+    #warning("need to be implemented")
+    func order(operation: DataBaseOperationType<OrderDomein>) {
+        
     }
 
 }

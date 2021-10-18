@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol PostViewModelProtocol {
+protocol PostViewModelType {
     var applicationDependency: ApplicationDependency { get }
     
     func route(to page: PageType)
 }
 
-class PostViewModel: PostViewModelProtocol {
+class PostViewModel: PostViewModelType {
     var applicationDependency: ApplicationDependency
     
     init(applicationDependency: ApplicationDependency) {

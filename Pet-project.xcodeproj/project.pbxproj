@@ -25,7 +25,10 @@
 		9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A459926F7421100D67F20 /* PostViewController.swift */; };
 		9A2A45AC26F751BC00D67F20 /* PostMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A45AB26F751BC00D67F20 /* PostMediator.swift */; };
 		9A2A45AE26F754D500D67F20 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A45AD26F754D500D67F20 /* PostViewModel.swift */; };
-		9A3692CA271B563700EC1698 /* DataManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3692C9271B563700EC1698 /* DataManagerType.swift */; };
+		9A3692CA271B563700EC1698 /* DataBaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3692C9271B563700EC1698 /* DataBaseType.swift */; };
+		9A5FD472271C70DD0053A337 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5FD471271C70DD0053A337 /* RealmManager.swift */; };
+		9A5FD475271CA3260053A337 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9A5FD474271CA3260053A337 /* Realm */; };
+		9A5FD477271CA3260053A337 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A5FD476271CA3260053A337 /* RealmSwift */; };
 		9A832C9C2709D6F600028BF1 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832C9B2709D6F600028BF1 /* LoginFactory.swift */; };
 		9A832C9E2709D96A00028BF1 /* PostsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832C9D2709D96A00028BF1 /* PostsFactory.swift */; };
 		9A832CA12709D9D200028BF1 /* ForgetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A832CA02709D9D200028BF1 /* ForgetFactory.swift */; };
@@ -48,6 +51,14 @@
 		9AC459EA266BFF3000BF23AA /* LoginMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459E9266BFF3000BF23AA /* LoginMediator.swift */; };
 		9AC459EF266C10B600BF23AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9AC459EE266C10B600BF23AA /* Alamofire */; };
 		9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC459F0266C10E500BF23AA /* NetworkManager.swift */; };
+		9AE800A8271D549F00107002 /* CarObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800A7271D549F00107002 /* CarObject.swift */; };
+		9AE800AA271D552C00107002 /* MasterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800A9271D552C00107002 /* MasterObject.swift */; };
+		9AE800AC271D559D00107002 /* CustomerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800AB271D559D00107002 /* CustomerObject.swift */; };
+		9AE800B9271D9E7F00107002 /* CarDomein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800B8271D9E7F00107002 /* CarDomein.swift */; };
+		9AE800BB271D9E9800107002 /* MasterDomein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800BA271D9E9800107002 /* MasterDomein.swift */; };
+		9AE800BD271D9EA400107002 /* CustomerDomein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800BC271D9EA400107002 /* CustomerDomein.swift */; };
+		9AE800BF271DA15700107002 /* OrderDomein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800BE271DA15600107002 /* OrderDomein.swift */; };
+		9AE800C1271DA17100107002 /* OrderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800C0271DA17100107002 /* OrderObject.swift */; };
 		9AFB0047271B77D900F8FA36 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9AFB0046271B77D900F8FA36 /* SnapKit */; };
 		9AFB004A271C367500F8FA36 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0049271C367500F8FA36 /* RegisterViewController.swift */; };
 		9AFB004D271C3E0600F8FA36 /* RegisterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB004C271C3E0600F8FA36 /* RegisterFactory.swift */; };
@@ -99,7 +110,8 @@
 		9A2A459926F7421100D67F20 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		9A2A45AB26F751BC00D67F20 /* PostMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMediator.swift; sourceTree = "<group>"; };
 		9A2A45AD26F754D500D67F20 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
-		9A3692C9271B563700EC1698 /* DataManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerType.swift; sourceTree = "<group>"; };
+		9A3692C9271B563700EC1698 /* DataBaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseType.swift; sourceTree = "<group>"; };
+		9A5FD471271C70DD0053A337 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		9A832C9B2709D6F600028BF1 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
 		9A832C9D2709D96A00028BF1 /* PostsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsFactory.swift; sourceTree = "<group>"; };
 		9A832CA02709D9D200028BF1 /* ForgetFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetFactory.swift; sourceTree = "<group>"; };
@@ -120,6 +132,14 @@
 		9AC459E7266BB0BF00BF23AA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		9AC459E9266BFF3000BF23AA /* LoginMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMediator.swift; sourceTree = "<group>"; };
 		9AC459F0266C10E500BF23AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9AE800A7271D549F00107002 /* CarObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarObject.swift; sourceTree = "<group>"; };
+		9AE800A9271D552C00107002 /* MasterObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterObject.swift; sourceTree = "<group>"; };
+		9AE800AB271D559D00107002 /* CustomerObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerObject.swift; sourceTree = "<group>"; };
+		9AE800B8271D9E7F00107002 /* CarDomein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDomein.swift; sourceTree = "<group>"; };
+		9AE800BA271D9E9800107002 /* MasterDomein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterDomein.swift; sourceTree = "<group>"; };
+		9AE800BC271D9EA400107002 /* CustomerDomein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDomein.swift; sourceTree = "<group>"; };
+		9AE800BE271DA15600107002 /* OrderDomein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDomein.swift; sourceTree = "<group>"; };
+		9AE800C0271DA17100107002 /* OrderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderObject.swift; sourceTree = "<group>"; };
 		9AFB0049271C367500F8FA36 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9AFB004C271C3E0600F8FA36 /* RegisterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFactory.swift; sourceTree = "<group>"; };
 		9AFB004E271C3E8900F8FA36 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -132,6 +152,8 @@
 			files = (
 				9AFB0047271B77D900F8FA36 /* SnapKit in Frameworks */,
 				9A832CAD2709E95A00028BF1 /* FirebaseAuth in Frameworks */,
+				9A5FD475271CA3260053A337 /* Realm in Frameworks */,
+				9A5FD477271CA3260053A337 /* RealmSwift in Frameworks */,
 				9AC459EF266C10B600BF23AA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,15 +218,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		693E017A266917F00091740E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9A997A2127087E2900FFE637 /* AuthModel.swift */,
-				69BDA452270B319200479E19 /* ApplicationDependency.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		693E017B266918190091740E /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,9 +239,8 @@
 		9A2A459426F63D3000D67F20 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				9A2A456A26F63A3300D67F20 /* Cell.xcdatamodeld */,
-				9A2A459526F63D4600D67F20 /* CoreDataManager.swift */,
-				9A3692C9271B563700EC1698 /* DataManagerType.swift */,
+				9A5FD46F271C70B80053A337 /* Realm */,
+				9A5FD470271C70C20053A337 /* CoreData */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -251,6 +263,23 @@
 				9A2A45AD26F754D500D67F20 /* PostViewModel.swift */,
 			);
 			path = PostsViewController;
+			sourceTree = "<group>";
+		};
+		9A5FD46F271C70B80053A337 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				9A5FD471271C70DD0053A337 /* RealmManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		9A5FD470271C70C20053A337 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9A2A456A26F63A3300D67F20 /* Cell.xcdatamodeld */,
+				9A2A459526F63D4600D67F20 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		9A832C982709D67000028BF1 /* LoginFactory */ = {
@@ -369,14 +398,9 @@
 		9ADF5D7C2674C6B800E16A1C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				693E0164266917A30091740E /* AppDelegate.swift */,
-				693E0166266917A30091740E /* SceneDelegate.swift */,
-				693E017A266917F00091740E /* Model */,
-				693E0179266917EA0091740E /* Controllers */,
-				9AB7A1552709CFD50075EE47 /* Cordinator */,
-				9A997A1A2708792400FFE637 /* Services */,
-				9AC459EC266C0C4800BF23AA /* Network */,
-				9A2A459426F63D3000D67F20 /* DataBase */,
+				9AE800B2271D9B9B00107002 /* PresentationLayer */,
+				9AE800B3271D9BAC00107002 /* DomeinLayer */,
+				9AE800B4271D9BB900107002 /* DataLayer */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -386,6 +410,93 @@
 			children = (
 			);
 			path = Project;
+			sourceTree = "<group>";
+		};
+		9AE800AD271D78AB00107002 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				9AE800AF271D8A1C00107002 /* Realm */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		9AE800AE271D78CD00107002 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9A997A2127087E2900FFE637 /* AuthModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9AE800AF271D8A1C00107002 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				9AE800A7271D549F00107002 /* CarObject.swift */,
+				9AE800A9271D552C00107002 /* MasterObject.swift */,
+				9AE800AB271D559D00107002 /* CustomerObject.swift */,
+				9AE800C0271DA17100107002 /* OrderObject.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		9AE800B2271D9B9B00107002 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				693E0164266917A30091740E /* AppDelegate.swift */,
+				693E0166266917A30091740E /* SceneDelegate.swift */,
+				9AB7A1552709CFD50075EE47 /* Cordinator */,
+				693E0179266917EA0091740E /* Controllers */,
+				9AE800B5271D9C1700107002 /* Model */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		9AE800B3271D9BAC00107002 /* DomeinLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9A3692C9271B563700EC1698 /* DataBaseType.swift */,
+				9AE800B6271D9C3500107002 /* Model */,
+			);
+			path = DomeinLayer;
+			sourceTree = "<group>";
+		};
+		9AE800B4271D9BB900107002 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9AE800B7271D9C4600107002 /* Model */,
+				9A2A459426F63D3000D67F20 /* DataBase */,
+				9AC459EC266C0C4800BF23AA /* Network */,
+				9A997A1A2708792400FFE637 /* Services */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		9AE800B5271D9C1700107002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69BDA452270B319200479E19 /* ApplicationDependency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9AE800B6271D9C3500107002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AE800B8271D9E7F00107002 /* CarDomein.swift */,
+				9AE800BA271D9E9800107002 /* MasterDomein.swift */,
+				9AE800BC271D9EA400107002 /* CustomerDomein.swift */,
+				9AE800BE271DA15600107002 /* OrderDomein.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9AE800B7271D9C4600107002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AE800AD271D78AB00107002 /* DataBase */,
+				9AE800AE271D78CD00107002 /* Auth */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9AFB0048271C354E00F8FA36 /* RegisterViewController */ = {
@@ -426,6 +537,8 @@
 				9AC459EE266C10B600BF23AA /* Alamofire */,
 				9A832CAC2709E95A00028BF1 /* FirebaseAuth */,
 				9AFB0046271B77D900F8FA36 /* SnapKit */,
+				9A5FD474271CA3260053A337 /* Realm */,
+				9A5FD476271CA3260053A337 /* RealmSwift */,
 			);
 			productName = "Pet-project";
 			productReference = 693E0161266917A30091740E /* Pet-project.app */;
@@ -480,6 +593,7 @@
 				9AC459ED266C10B600BF23AA /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9A832CAB2709E95A00028BF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9AFB0045271B77D900F8FA36 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				9A5FD473271CA3260053A337 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 693E0162266917A30091740E /* Products */;
 			projectDirPath = "";
@@ -522,32 +636,41 @@
 				9A997A3127091F6100FFE637 /* ScreenFactory.swift in Sources */,
 				9AB7A1572709D0220075EE47 /* Cordinator.swift in Sources */,
 				9AC459EA266BFF3000BF23AA /* LoginMediator.swift in Sources */,
-				9A3692CA271B563700EC1698 /* DataManagerType.swift in Sources */,
+				9A5FD472271C70DD0053A337 /* RealmManager.swift in Sources */,
+				9A3692CA271B563700EC1698 /* DataBaseType.swift in Sources */,
 				9A2A456C26F63A3300D67F20 /* Cell.xcdatamodeld in Sources */,
 				9A997A3327091F7100FFE637 /* ScreenFactoryIml.swift in Sources */,
 				9AFB004F271C3E8900F8FA36 /* RegisterViewModel.swift in Sources */,
 				9A832CA12709D9D200028BF1 /* ForgetFactory.swift in Sources */,
 				693E01802669188C0091740E /* LoginViewController.swift in Sources */,
+				9AE800AC271D559D00107002 /* CustomerObject.swift in Sources */,
 				9A2A45AC26F751BC00D67F20 /* PostMediator.swift in Sources */,
 				693E0165266917A30091740E /* AppDelegate.swift in Sources */,
 				9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */,
 				9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */,
 				9AFB004A271C367500F8FA36 /* RegisterViewController.swift in Sources */,
+				9AE800BD271D9EA400107002 /* CustomerDomein.swift in Sources */,
+				9AE800A8271D549F00107002 /* CarObject.swift in Sources */,
 				693E018526691EF10091740E /* LoginView.swift in Sources */,
 				9A282254270D0DDA0021ABBF /* CustomTextFieldDelegate.swift in Sources */,
 				9AB7A15D2709D1CF0075EE47 /* BaseViewController.swift in Sources */,
+				9AE800BB271D9E9800107002 /* MasterDomein.swift in Sources */,
 				9A832C9C2709D6F600028BF1 /* LoginFactory.swift in Sources */,
 				9AB7A1522709B21B0075EE47 /* MainRouter.swift in Sources */,
 				69BDA453270B319200479E19 /* ApplicationDependency.swift in Sources */,
+				9AE800BF271DA15700107002 /* OrderDomein.swift in Sources */,
 				9A2A45AE26F754D500D67F20 /* PostViewModel.swift in Sources */,
+				9AE800AA271D552C00107002 /* MasterObject.swift in Sources */,
 				9AC459E8266BB0BF00BF23AA /* CustomTextField.swift in Sources */,
 				9A832C9E2709D96A00028BF1 /* PostsFactory.swift in Sources */,
+				9AE800B9271D9E7F00107002 /* CarDomein.swift in Sources */,
 				9A282256270D0E3F0021ABBF /* PasswordImageEnum.swift in Sources */,
 				9AFB004D271C3E0600F8FA36 /* RegisterFactory.swift in Sources */,
 				9A997A2A2709167800FFE637 /* CordinatorImp.swift in Sources */,
 				9A997A1C270879D800FFE637 /* FirebaseAuth.swift in Sources */,
 				693E0167266917A30091740E /* SceneDelegate.swift in Sources */,
 				9A997A2727088E4200FFE637 /* AuthResult.swift in Sources */,
+				9AE800C1271DA17100107002 /* OrderObject.swift in Sources */,
 				9A282258271199D30021ABBF /* NetworkManagerType.swift in Sources */,
 				9A997A2C27091D3700FFE637 /* PageType.swift in Sources */,
 				9AB7A1592709D0B10075EE47 /* LoginViewModel.swift in Sources */,
@@ -834,6 +957,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9A5FD473271CA3260053A337 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
 		9A832CAB2709E95A00028BF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -861,6 +992,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9A5FD474271CA3260053A337 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A5FD473271CA3260053A337 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		9A5FD476271CA3260053A337 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A5FD473271CA3260053A337 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
 		9A832CAC2709E95A00028BF1 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9A832CAB2709E95A00028BF1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

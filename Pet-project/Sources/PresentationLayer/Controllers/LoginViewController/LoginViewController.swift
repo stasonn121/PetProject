@@ -10,7 +10,7 @@ import UIKit
 class LoginViewController: BaseViewController {
     
     @IBOutlet weak var loginView: LoginView!
-    var viewModel: LoginViewModelProtocol!
+    var viewModel: LoginViewModelType!
     var mediator: LoginMediator?
     
     override func viewDidLoad() {

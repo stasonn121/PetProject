@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol LoginViewModelProtocol {
+protocol LoginViewModelType {
     var applicationDependency: ApplicationDependency { get }
     var needShowError: ((AlertModel) -> Void)? { get set }
     
@@ -16,7 +16,7 @@ protocol LoginViewModelProtocol {
     func presentModaly(page: PageType)
 }
 
-class LoginViewModel: LoginViewModelProtocol {
+class LoginViewModel: LoginViewModelType {
     var applicationDependency: ApplicationDependency
     var needShowError: ((AlertModel) -> Void)?
     
