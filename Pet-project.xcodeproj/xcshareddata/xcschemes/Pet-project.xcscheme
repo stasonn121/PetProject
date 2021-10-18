@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Pet-project.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "69B69A98271DA8E000D7C642"
+               BuildableName = "Pet-projectUITests.xctest"
+               BlueprintName = "Pet-projectUITests"
+               ReferencedContainer = "container:Pet-project.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

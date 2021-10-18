@@ -18,6 +18,7 @@ class PostViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mediator = PostMediator(viewController: self)
+        postsTableView.accessibilityIdentifier = "TABLE"
     }
 
 }
