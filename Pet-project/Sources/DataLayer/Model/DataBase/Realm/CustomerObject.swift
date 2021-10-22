@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class CustomerObject: Object {
-    @Persisted var name: String
-    @Persisted var id: Int
-}
+//class CustomerObject: Object {
+//    @Persisted var name: String
+//    @Persisted var id: Int
+//}

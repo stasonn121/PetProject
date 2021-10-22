@@ -8,6 +8,6 @@
 import Foundation
 import RealmSwift
 
-class CarObject: Object {
-    
-}
+//class CarObject: Object {
+//    
+//}

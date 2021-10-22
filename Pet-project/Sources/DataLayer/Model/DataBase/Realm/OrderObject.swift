@@ -8,6 +8,15 @@
 import Foundation
 import RealmSwift
 
-class Order: Object {
-    
+class OrderObject: Object {
+    @Persisted var name: String
+}
+
+extension OrderDomein {
+    func mapToOrderObject() -> OrderObject {
+        let orderObject = OrderObject()
+        orderObject.name = self.name
+        
+        return orderObject
+    }
 }

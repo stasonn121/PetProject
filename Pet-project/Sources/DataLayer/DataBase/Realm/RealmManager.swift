@@ -15,19 +15,59 @@ class RealmManager: DataBaseType {
     
     private init() { }
     
-    func saveContext() {
-
-    }
+    func saveContext() { }
     
     func master(operation: DataBaseOperationType<MasterDomein>) {
         switch operation {
-        case .add(let master): do { }
-        case .remove(let master): do { }
-        case .update(let master): do { }
+        case .add(let master): addMaster(master: master)
+        case .remove(let master): removeMaster(master: master)
+        case .update(let master): updateMaster(master: master)
         }
     }
     
     func order(operation: DataBaseOperationType<OrderDomein>) {
+        switch operation {
+        case .add(let order): addOrder(order: order)
+        case .remove(let order): removeOrder(order: order)
+        case .update(let order): updateOrder(order: order)
+        }
+    }
+    
+}
+
+//MARK: - Master operation
+extension RealmManager {
+    
+    private func addMaster(master: MasterDomein) {
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        let masterObject = master.mapToMasterObject()
+        try! Realm().write {
+            try! Realm().add(masterObject)
+        }
+    }
+    
+    private func removeMaster(master: MasterDomein) {
+        
+    }
+    
+    private func updateMaster(master: MasterDomein) {
+        
+    }
+    
+}
+
+//MARK: - Order operation
+extension RealmManager {
+    
+    private func addOrder(order: OrderDomein) {
+        
+    }
+    
+    private func removeOrder(order: OrderDomein) {
+        
+    }
+    
+    private func updateOrder(order: OrderDomein) {
         
     }
     

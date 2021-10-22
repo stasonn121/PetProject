@@ -8,5 +8,8 @@
 import Foundation
 
 struct MasterDomein {
-    
+    var id: Int
+    var name: String
+    var availableServices: [String]
+    var orders: [OrderDomein]
 }

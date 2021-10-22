@@ -8,5 +8,5 @@
 import Foundation
 
 struct OrderDomein {
-    
+    var name: String
 }
