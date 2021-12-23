@@ -61,6 +61,8 @@
 		9AE800BD271D9EA400107002 /* CustomerDomein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800BC271D9EA400107002 /* CustomerDomein.swift */; };
 		9AE800BF271DA15700107002 /* OrderDomein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800BE271DA15600107002 /* OrderDomein.swift */; };
 		9AE800C1271DA17100107002 /* OrderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800C0271DA17100107002 /* OrderObject.swift */; };
+		9AE800C42728581900107002 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800C32728581900107002 /* Colors.swift */; };
+		9AE800C927285BEB00107002 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE800C827285BEB00107002 /* RegisterView.swift */; };
 		9AFB0047271B77D900F8FA36 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9AFB0046271B77D900F8FA36 /* SnapKit */; };
 		9AFB004A271C367500F8FA36 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0049271C367500F8FA36 /* RegisterViewController.swift */; };
 		9AFB004D271C3E0600F8FA36 /* RegisterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB004C271C3E0600F8FA36 /* RegisterFactory.swift */; };
@@ -152,6 +154,8 @@
 		9AE800BC271D9EA400107002 /* CustomerDomein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDomein.swift; sourceTree = "<group>"; };
 		9AE800BE271DA15600107002 /* OrderDomein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDomein.swift; sourceTree = "<group>"; };
 		9AE800C0271DA17100107002 /* OrderObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderObject.swift; sourceTree = "<group>"; };
+		9AE800C32728581900107002 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9AE800C827285BEB00107002 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		9AFB0049271C367500F8FA36 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9AFB004C271C3E0600F8FA36 /* RegisterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFactory.swift; sourceTree = "<group>"; };
 		9AFB004E271C3E8900F8FA36 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 			children = (
 				9AC459E6266BB0AF00BF23AA /* IBDesignable */,
 				693E017B266918190091740E /* LoginView */,
+				9AE800C527285BA400107002 /* RegisterView */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -418,7 +423,7 @@
 		9ADF5D7B2674C5B200E16A1C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				693E016D266917A50091740E /* Assets.xcassets */,
+				9AE800C2272857E200107002 /* Assets */,
 				9AC459EB266C092300BF23AA /* Storyboard */,
 				693E0178266917DD0091740E /* Xibs */,
 			);
@@ -527,6 +532,23 @@
 				9AE800AE271D78CD00107002 /* Auth */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9AE800C2272857E200107002 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				693E016D266917A50091740E /* Assets.xcassets */,
+				9AE800C32728581900107002 /* Colors.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9AE800C527285BA400107002 /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				9AE800C827285BEB00107002 /* RegisterView.swift */,
+			);
+			path = RegisterView;
 			sourceTree = "<group>";
 		};
 		9AFB0048271C354E00F8FA36 /* RegisterViewController */ = {
@@ -705,6 +727,7 @@
 				693E01802669188C0091740E /* LoginViewController.swift in Sources */,
 				9AE800AC271D559D00107002 /* CustomerObject.swift in Sources */,
 				9A2A45AC26F751BC00D67F20 /* PostMediator.swift in Sources */,
+				9AE800C42728581900107002 /* Colors.swift in Sources */,
 				693E0165266917A30091740E /* AppDelegate.swift in Sources */,
 				9A2A459B26F7421100D67F20 /* PostViewController.swift in Sources */,
 				9AC459F1266C10E500BF23AA /* NetworkManager.swift in Sources */,
@@ -714,6 +737,7 @@
 				693E018526691EF10091740E /* LoginView.swift in Sources */,
 				9A282254270D0DDA0021ABBF /* CustomTextFieldDelegate.swift in Sources */,
 				9AB7A15D2709D1CF0075EE47 /* BaseViewController.swift in Sources */,
+				9AE800C927285BEB00107002 /* RegisterView.swift in Sources */,
 				9AE800BB271D9E9800107002 /* MasterDomein.swift in Sources */,
 				9A832C9C2709D6F600028BF1 /* LoginFactory.swift in Sources */,
 				9AB7A1522709B21B0075EE47 /* MainRouter.swift in Sources */,
@@ -916,7 +940,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKKK6K6GX6;
 				INFOPLIST_FILE = "Pet-project/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -936,7 +960,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKKK6K6GX6;
 				INFOPLIST_FILE = "Pet-project/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

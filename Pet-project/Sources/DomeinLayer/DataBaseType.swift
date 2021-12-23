@@ -20,4 +20,6 @@ protocol DataBaseType {
     
     func master(operation: DataBaseOperationType<MasterDomein>)
     func order(operation: DataBaseOperationType<OrderDomein>)
+    
+    func getAllMasterOrders() -> [MasterDomein]
 }

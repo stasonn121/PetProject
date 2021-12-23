@@ -15,6 +15,22 @@ class MasterObject: Object {
     @Persisted var orders: List<OrderObject>
 }
 
+extension MasterObject {
+    func mapToMasterDomein() -> MasterDomein {
+        var listServices = [String]()
+        self.availableServices.forEach { listServices.append($0) }
+        
+        var orders = [OrderDomein]()
+        self.orders.forEach { orders.append($0.mapToOrderDomein())}
+        
+        let masterObject = MasterDomein(id: self.id,
+                                        name: self.name,
+                                        availableServices: listServices,
+                                        orders: orders)
+        return masterObject
+    }
+}
+
 extension MasterDomein {
     func mapToMasterObject() -> MasterObject {
         let listServices = List<String>()

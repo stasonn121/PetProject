@@ -40,12 +40,12 @@ class LoginView: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        settingTextFields()
-        settingSpinerView()
+        setupTextFields()
+        setupSpinerView()
         setupTapGesture()
     }
     
-    private func settingTextFields() {
+    private func setupTextFields() {
         emailTextField.customDelegate = self
         passwordTextField.customDelegate = self
     }
@@ -66,7 +66,7 @@ class LoginView: UIView {
         contentView.addGestureRecognizer(tapGesture)
     }
     
-    private func settingSpinerView() {
+    private func setupSpinerView() {
         spinerView.alpha = 0.3
     }
     
@@ -91,10 +91,10 @@ extension LoginView: CustomTextFieldDelegate {
     func textField(_ textField: CustomTextField, onClickRight imageView: UIImageView) {
         guard textField == passwordTextField else { return }
         if (passwordTextField.isSecureTextEntry) {
-            passwordTextField.rightImage = PasswordImageEnum.eyeImage.getImage()
+            passwordTextField.rightImage = PasswordImageEnum.eyeImage.value
             passwordTextField.isSecureTextEntry = false
         } else {
-            passwordTextField.rightImage = PasswordImageEnum.eyeSlashImage.getImage()
+            passwordTextField.rightImage = PasswordImageEnum.eyeSlashImage.value
             passwordTextField.isSecureTextEntry = true
         }
     }

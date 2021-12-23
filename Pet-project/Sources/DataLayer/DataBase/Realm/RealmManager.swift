@@ -54,6 +54,11 @@ extension RealmManager {
         
     }
     
+    func getAllMasterOrders() -> [MasterDomein] {
+        let arrayMasterObjects = try! Realm().objects(MasterObject.self)
+        return arrayMasterObjects.map { $0.mapToMasterDomein() }
+    }
+    
 }
 
 //MARK: - Order operation
@@ -68,7 +73,6 @@ extension RealmManager {
     }
     
     private func updateOrder(order: OrderDomein) {
-        
-    }
     
+    }
 }

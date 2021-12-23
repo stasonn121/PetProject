@@ -43,6 +43,11 @@ class CoreDataManager: DataBaseType {
         
     }
     
+#warning("need to be implemented")
+    func getAllMasterOrders() -> [MasterDomein] {
+        return []
+    }
+    
     #warning("need to be implemented")
     func order(operation: DataBaseOperationType<OrderDomein>) {
         

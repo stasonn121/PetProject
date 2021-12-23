@@ -43,14 +43,5 @@ class LoginViewModel: LoginViewModelType {
             }
             }
         }
-        
-        applicationDependency.dataManager.master(
-            operation: .add(
-                MasterDomein(id: 1,
-                             name: "A",
-                             availableServices: ["B"],
-                             orders: [])
-            )
-        )
     }
 }

@@ -11,7 +11,7 @@ enum PasswordImageEnum {
     case eyeImage
     case eyeSlashImage
     
-    func getImage() -> UIImage {
+    var value: UIImage {
         switch self {
         case .eyeImage: return UIImage(systemName: "eye") ?? UIImage()
         case .eyeSlashImage: return UIImage(systemName: "eye.slash") ?? UIImage()
